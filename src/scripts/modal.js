@@ -75,15 +75,13 @@ export function initModal() {
 
   function renderModal(word) {
     const content = document.getElementById('modal-content');
-    const titleEntry = document.getElementById('modal-titlebar-entry');
     const titleWork = document.getElementById('modal-titlebar-work');
     const navCounter = document.getElementById('modal-nav-counter');
     const hostname = window.location.hostname || 'localhost';
 
     if (!content) return;
 
-    if (titleEntry) titleEntry.textContent = `Entry #${word.id}`;
-    if (titleWork) titleWork.textContent = word.tag;
+    if (titleWork) titleWork.textContent = word.tag ? `[ ${word.tag} ]` : '';
 
     updateVisibleWordIds();
     const visibleIdx = visibleWordIds.indexOf(word.id);
