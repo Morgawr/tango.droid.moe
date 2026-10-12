@@ -22,7 +22,7 @@ The interface adheres strictly to a retro PC-98 / classic visual novel terminal 
 - **Palette**: Deep charcoal-brown canvas (`#171614`), dark taupe panels (`#1e1c19`, `#24211d`), 1px crisp borders (`#38342f`), and parchment off-white text (`#dcd5cc`).
 - **Accent Colors**: Desaturated amber (`#c49c48`) for target word highlights, and desaturated brick red (`#b35e52`) for stream clips.
 - **Strict Square Geometry**: All corners have `border-radius: 0px`. No rounded corners anywhere (`rounded-none`).
-- **No Pill Labels or Status Dots**: No rounded badges, pill tags, or indicator dots (`●`). Labels are rendered with clean square bracket notation: `[ Interlude ]`, `[ Futae no Kage ]`, `[ CLIP ]`.
+- **No Pill Labels or Status Dots**: No rounded badges, pill tags, or indicator dots (`●`). Labels are rendered with clean square bracket notation: `[ 二重影 ]`, `[ インタールード ]`, `[ CLIP ]`.
 - **English UI Chrome**: All navigation, control labels, and metadata indicators are in English (`[ Words ]`, `[ Works ]`, `Search vocabulary...`). Authentic Japanese is preserved in headwords, readings, and dialogue sentences.
 
 ## Architecture

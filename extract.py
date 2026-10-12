@@ -123,9 +123,8 @@ for row in rows:
 
     # Resolve work metadata
     work_meta = known_works.get(tag, {
-        "slug": tag.lower().replace(" ", "-"),
+        "slug": tag,
         "title": tag,
-        "titleJapanese": tag,
         "vndbId": None,
         "vndbRating": None,
         "developer": None,

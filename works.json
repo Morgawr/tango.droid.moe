@@ -1,8 +1,7 @@
 {
   "インタールード": {
-    "slug": "interlude",
-    "title": "Interlude",
-    "titleJapanese": "インタールード",
+    "slug": "v388",
+    "title": "インタールード",
     "vndbId": "v388",
     "vndbRating": 7.82,
     "developer": "Longshot",
@@ -10,9 +9,8 @@
     "description": "A psychological mystery visual novel featuring dynamic parallax scenes and an intricate branching timeline."
   },
   "二重影": {
-    "slug": "futae-no-kage",
-    "title": "Futae no Kage",
-    "titleJapanese": "二重影",
+    "slug": "v1330",
+    "title": "二重影",
     "vndbId": "v1330",
     "vndbRating": 6.94,
     "developer": "TACTICS",
