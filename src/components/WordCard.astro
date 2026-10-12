@@ -57,19 +57,19 @@ const hasClip = Boolean(word.twitchClipUrl);
       )}
     </div>
 
-    <!-- Dialogue Sentence -->
-    <div class="mb-3 flex-1">
-      <p 
-        class="text-xs sm:text-sm text-text-main font-jp leading-relaxed line-clamp-2"
-        set:html={highlightedSentence}
-      />
-    </div>
-
-    <!-- English Definition -->
-    <div class="mb-3 pt-2 border-t border-border-dim">
-      <p class="text-xs text-text-muted font-mono line-clamp-2">
+    <!-- English Definition (Primary) -->
+    <div class="mb-2.5">
+      <p class="text-sm font-mono text-text-bright font-semibold leading-snug line-clamp-2">
         {word.definitionText || (word.definitions && word.definitions[0]) || 'No definition available.'}
       </p>
+    </div>
+
+    <!-- Dialogue Sentence (Secondary Context) -->
+    <div class="mb-3 pt-2 border-t border-border-dim flex-1">
+      <p 
+        class="text-xs text-text-muted font-jp leading-relaxed line-clamp-2"
+        set:html={highlightedSentence}
+      />
     </div>
 
     <!-- Card Footer -->

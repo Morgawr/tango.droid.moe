@@ -123,12 +123,12 @@ export function initModal() {
 
     const definitionsHtml = word.definitions && word.definitions.length > 0
       ? word.definitions.map((def, idx) => `
-          <li class="flex items-start gap-2">
-            <span class="text-accent-green-bright font-semibold shrink-0">[${idx + 1}]</span>
-            <span>${escapeHtml(def)}</span>
+          <li class="flex items-start gap-2.5">
+            <span class="text-accent-green-bright font-bold shrink-0">[${idx + 1}]</span>
+            <span class="text-text-bright font-medium leading-relaxed">${escapeHtml(def)}</span>
           </li>
         `).join('')
-      : `<li class="text-text-muted">${escapeHtml(word.definitionText || 'No definition available.')}</li>`;
+      : `<li class="text-text-bright font-medium">${escapeHtml(word.definitionText || 'No definition available.')}</li>`;
 
     content.innerHTML = `
       <div class="flex flex-col gap-5">
@@ -155,18 +155,18 @@ export function initModal() {
         <!-- Media -->
         ${mediaHtml}
 
-        <!-- Sentence -->
-        <div class="border border-border-green bg-surface-green/40 p-4">
-          <p class="text-base sm:text-lg font-jp text-text-bright leading-relaxed">
-            ${highlightedSentence}
-          </p>
-        </div>
-
-        <!-- Definitions -->
-        <div class="border border-border-default bg-surface-alt p-4">
-          <ul class="space-y-2 font-mono text-xs sm:text-sm text-text-main">
+        <!-- Definitions (Primary) -->
+        <div class="border border-border-green bg-surface-green/50 p-4 sm:p-5">
+          <ul class="space-y-2.5 font-mono text-sm sm:text-base">
             ${definitionsHtml}
           </ul>
+        </div>
+
+        <!-- Sentence (Secondary) -->
+        <div class="border border-border-default bg-surface-alt p-4">
+          <p class="text-sm sm:text-base font-jp text-text-muted leading-relaxed">
+            ${highlightedSentence}
+          </p>
         </div>
 
         <div class="pt-2 flex justify-end font-mono text-xs">
