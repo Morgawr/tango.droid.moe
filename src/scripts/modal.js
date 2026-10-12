@@ -171,15 +171,7 @@ export function initModal() {
           </ul>
         </div>
 
-        <!-- Actions -->
-        <div class="pt-2 flex items-center justify-between font-mono text-xs">
-          <button 
-            type="button" 
-            id="modal-copy-link-btn"
-            class="px-2.5 py-1 border border-border-default hover:border-accent-green bg-surface text-text-muted hover:text-accent-green-bright transition-colors"
-          >
-            [ Copy Link ]
-          </button>
+        <div class="pt-2 flex justify-end font-mono text-xs">
           <a 
             href="/words/${word.id}" 
             class="text-text-muted hover:text-accent-green-bright hover:underline"
@@ -189,21 +181,6 @@ export function initModal() {
         </div>
       </div>
     `;
-
-    const copyBtn = document.getElementById('modal-copy-link-btn');
-    if (copyBtn) {
-      copyBtn.onclick = async () => {
-        const link = `${window.location.origin}/words/${word.id}`;
-        try {
-          await navigator.clipboard.writeText(link);
-          const orig = copyBtn.textContent;
-          copyBtn.textContent = '[ Copied ]';
-          setTimeout(() => { copyBtn.textContent = orig; }, 1500);
-        } catch {
-          prompt('Copy link:', link);
-        }
-      };
-    }
   }
 
   function openModal(wordId, updateUrl = true) {

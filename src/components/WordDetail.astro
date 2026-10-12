@@ -119,24 +119,16 @@ const clipSlug = extractTwitchClipSlug(word.twitchClipUrl);
     )}
   </div>
 
-  <!-- Actions -->
-  <div class="pt-2 flex items-center justify-between font-mono text-xs">
-    <button 
-      type="button" 
-      class="copy-link-btn px-2.5 py-1 border border-border-default hover:border-accent-green bg-surface hover:bg-surface-alt text-text-muted hover:text-accent-green-bright transition-colors"
-      data-copy-url={`/words/${word.id}`}
-    >
-      [ Copy Link ]
-    </button>
-    {isModal && (
+  {isModal && (
+    <div class="pt-2 flex justify-end font-mono text-xs">
       <a 
         href={`/words/${word.id}`}
         class="text-text-muted hover:text-accent-green-bright hover:underline"
       >
         [ Open Page &nearr; ]
       </a>
-    )}
-  </div>
+    </div>
+  )}
 </div>
 
 <script>
@@ -159,23 +151,5 @@ const clipSlug = extractTwitchClipSlug(word.twitchClipUrl);
     });
   }
 
-  function setupCopyButtons() {
-    document.querySelectorAll<HTMLButtonElement>('.copy-link-btn').forEach((btn) => {
-      btn.onclick = async () => {
-        const path = btn.getAttribute('data-copy-url');
-        const url = `${window.location.origin}${path}`;
-        try {
-          await navigator.clipboard.writeText(url);
-          const orig = btn.textContent;
-          btn.textContent = '[ Copied ]';
-          setTimeout(() => { btn.textContent = orig; }, 1500);
-        } catch {
-          prompt('Copy link:', url);
-        }
-      };
-    });
-  }
-
   setupTwitchEmbeds();
-  setupCopyButtons();
 </script>
