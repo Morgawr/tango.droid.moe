@@ -149,8 +149,8 @@ export function initModal() {
             <a href="/works/${word.workSlug}" class="border border-border-green bg-surface-green text-accent-green-bright hover:border-accent-green-bright px-2 py-0.5 transition-colors">
               [ ${escapeHtml(word.tag)} ]
             </a>
-            ${hasClip ? '<span class="border border-accent-rust text-accent-rust px-1.5 py-0.5">[ CLIP ]</span>' : ''}
-            ${word.frequencyRank ? `<span class="text-text-dim">#${word.frequencyRank}</span>` : ''}
+            ${hasClip ? '<span class="border border-accent-rust text-accent-rust px-1.5 py-0.5 font-bold">[ CLIP ]</span>' : ''}
+            ${word.frequencyRank ? `<span class="border border-border-default bg-surface px-1.5 py-0.5 text-text-muted">Frequency #${word.frequencyRank}</span>` : ''}
           </div>
         </div>
 
@@ -184,7 +184,7 @@ export function initModal() {
             href="/words/${word.id}" 
             class="text-text-muted hover:text-accent-green-bright hover:underline"
           >
-            [ Permapage &rarr; ]
+            [ Open Page &nearr; ]
           </a>
         </div>
       </div>
