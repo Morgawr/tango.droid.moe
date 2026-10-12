@@ -60,7 +60,7 @@ const hasClip = Boolean(word.twitchClipUrl);
     <!-- English Definition (Primary) -->
     <div class="mb-2.5">
       <p class="text-sm font-mono text-text-bright font-semibold leading-snug line-clamp-2">
-        {word.definitionText || (word.definitions && word.definitions[0]) || 'No definition available.'}
+        {(word.definitions && word.definitions[0]) || word.definitionText || 'No definition available.'}
       </p>
     </div>
 

@@ -1,6 +1,6 @@
 ---
 import type { WordItem } from '../utils/text';
-import { formatSentenceHtml, extractTwitchClipSlug } from '../utils/text';
+import { formatSentenceHtml, extractTwitchClipSlug, formatDefinition } from '../utils/text';
 
 interface Props {
   word: WordItem;
@@ -97,12 +97,17 @@ const clipSlug = extractTwitchClipSlug(word.twitchClipUrl);
   <div class="border border-border-green bg-surface-green/50 p-4 sm:p-5">
     {word.definitions && word.definitions.length > 0 ? (
       <ul class="space-y-2.5 font-mono text-sm sm:text-base">
-        {word.definitions.map((def, idx) => (
-          <li class="flex items-start gap-2.5">
-            <span class="text-accent-green-bright font-bold shrink-0">[{idx + 1}]</span>
-            <span class="text-text-bright font-medium leading-relaxed">{def}</span>
-          </li>
-        ))}
+        {word.definitions.map((def, idx) => {
+          const item = formatDefinition(def, idx, word.definitions!.length);
+          return (
+            <li class="flex items-start gap-2.5">
+              {item.marker && (
+                <span class="text-accent-green-bright font-bold shrink-0">{item.marker}</span>
+              )}
+              <span class="text-text-bright font-medium leading-relaxed">{item.text}</span>
+            </li>
+          );
+        })}
       </ul>
     ) : (
       <p class="font-mono text-sm sm:text-base text-text-bright font-medium">

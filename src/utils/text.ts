@@ -59,3 +59,20 @@ export function extractTwitchClipSlug(url?: string | null): string | null {
   const match = url.match(/clip\/([A-Za-z0-9_-]+)/) || url.match(/clips\.twitch\.tv\/([A-Za-z0-9_-]+)/);
   return match ? match[1] : null;
 }
+
+export interface FormattedDefinition {
+  marker?: string;
+  text: string;
+}
+
+export function formatDefinition(def: string, index: number, total: number): FormattedDefinition {
+  if (total <= 1) {
+    const match = def.match(/^([①-⑳]|\d+[\.\)]?)\s*(.*)$/);
+    return { text: match ? match[2] : def };
+  }
+  const match = def.match(/^([①-⑳]|\d+[\.\)]?)\s*(.*)$/);
+  if (match) {
+    return { marker: match[1], text: match[2] };
+  }
+  return { marker: `[${index + 1}]`, text: def };
+}

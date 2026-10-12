@@ -42,6 +42,18 @@ function extractClipSlug(url) {
   return match ? match[1] : null;
 }
 
+function formatDefinition(def, index, total) {
+  if (total <= 1) {
+    const match = def.match(/^([①-⑳]|\d+[\.\)]?)\s*(.*)$/);
+    return { text: match ? match[2] : def };
+  }
+  const match = def.match(/^([①-⑳]|\d+[\.\)]?)\s*(.*)$/);
+  if (match) {
+    return { marker: match[1], text: match[2] };
+  }
+  return { marker: `[${index + 1}]`, text: def };
+}
+
 export function initModal() {
   const dataScript = document.getElementById('all-words-data');
   if (!dataScript) return;
@@ -122,12 +134,15 @@ export function initModal() {
       `;
 
     const definitionsHtml = word.definitions && word.definitions.length > 0
-      ? word.definitions.map((def, idx) => `
-          <li class="flex items-start gap-2.5">
-            <span class="text-accent-green-bright font-bold shrink-0">[${idx + 1}]</span>
-            <span class="text-text-bright font-medium leading-relaxed">${escapeHtml(def)}</span>
-          </li>
-        `).join('')
+      ? word.definitions.map((def, idx) => {
+          const item = formatDefinition(def, idx, word.definitions.length);
+          return `
+            <li class="flex items-start gap-2.5">
+              ${item.marker ? `<span class="text-accent-green-bright font-bold shrink-0">${item.marker}</span>` : ''}
+              <span class="text-text-bright font-medium leading-relaxed">${escapeHtml(item.text)}</span>
+            </li>
+          `;
+        }).join('')
       : `<li class="text-text-bright font-medium">${escapeHtml(word.definitionText || 'No definition available.')}</li>`;
 
     content.innerHTML = `
