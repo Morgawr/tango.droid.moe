@@ -1,0 +1,1579 @@
+[
+  {
+    "id": 80,
+    "kind": "vocab",
+    "createdAt": 1791821141619,
+    "dateFormatted": "2026-10-12",
+    "term": "頻繁",
+    "reading": "ひんぱん",
+    "pitchAccent": null,
+    "frequencyRank": 5044,
+    "definitionText": "frequent; incessant",
+    "definitions": [
+      "frequent; incessant"
+    ],
+    "sentence": "「頻繁に主税さんとか彩さんとかが大岩の方にでかけるからね･････」",
+    "wordRange": [
+      1,
+      3
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/80.webp",
+    "thumbnailUrl": "/media/80_thumb.webp",
+    "twitchClipUrl": "https://www.twitch.tv/morgstream/clip/InnocentUglyPigeonSmoocherZ-aBv9nXnoIdeapQTa"
+  },
+  {
+    "id": 72,
+    "kind": "vocab",
+    "createdAt": 1791801025127,
+    "dateFormatted": "2026-10-12",
+    "term": "統制",
+    "reading": "とうせい",
+    "pitchAccent": null,
+    "frequencyRank": 16892,
+    "definitionText": "regulation; control",
+    "definitions": [
+      "regulation; control"
+    ],
+    "sentence": "「いったい、何人の人間を集める気なんだ」「すでに、18人の侍を集めている･･････」「しかもまったく統制のとれていない、バラバラの侍だ･･････」",
+    "wordRange": [
+      51,
+      53
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/72.webp",
+    "thumbnailUrl": "/media/72_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 71,
+    "kind": "vocab",
+    "createdAt": 1791787036587,
+    "dateFormatted": "2026-10-12",
+    "term": "俗物",
+    "reading": "ぞくぶつ",
+    "pitchAccent": null,
+    "frequencyRank": 32279,
+    "definitionText": "worldly-minded person; materialist; uncultured person; philistine; vulgar person; snob",
+    "definitions": [
+      "worldly-minded person; materialist; uncultured person; philistine; vulgar person; snob"
+    ],
+    "sentence": "「さっきから俗物ばかり来て、俺の「思索の邪魔ばかりするな････」",
+    "wordRange": [
+      6,
+      8
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/71.webp",
+    "thumbnailUrl": "/media/71_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 70,
+    "kind": "vocab",
+    "createdAt": 1791785430619,
+    "dateFormatted": "2026-10-12",
+    "term": "何方付かず",
+    "reading": "どっちつかず",
+    "pitchAccent": null,
+    "frequencyRank": 30773,
+    "definitionText": "noncommittal; equivocal; indecisive; evasive; ambiguous; vague; on neither side",
+    "definitions": [
+      "noncommittal; equivocal; indecisive; evasive; ambiguous; vague; on neither side"
+    ],
+    "sentence": "この島は、どっちつかずな感じが",
+    "wordRange": [
+      5,
+      11
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/70.webp",
+    "thumbnailUrl": "/media/70_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 69,
+    "kind": "vocab",
+    "createdAt": 1791785152068,
+    "dateFormatted": "2026-10-12",
+    "term": "陰陽五行",
+    "reading": "いんようごぎょう",
+    "pitchAccent": null,
+    "frequencyRank": 90213,
+    "definitionText": "the cosmic dual forces (yin and yang) and the five elements (metal, wood, water, fire and earth) in Chinese cosmology",
+    "definitions": [
+      "the cosmic dual forces (yin and yang) and the five elements (metal, wood, water, fire and earth) in Chinese cosmology"
+    ],
+    "sentence": "双厳はすでにこの島の信仰が歴など特に古代唐の陰陽五行の影響が色濃くみえる事を薄々勘づきはじめていた。",
+    "wordRange": [
+      22,
+      26
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/69.webp",
+    "thumbnailUrl": "/media/69_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 68,
+    "kind": "vocab",
+    "createdAt": 1791784974922,
+    "dateFormatted": "2026-10-12",
+    "term": "無傷",
+    "reading": "むきず",
+    "pitchAccent": null,
+    "frequencyRank": 6937,
+    "definitionText": "① unhurt; uninjured; unwounded; unscathed; unharmed\n② flawless (e.g. gem); unblemished; undamaged; perfect (condition)\n③ spotless (e.g. reputation); faultless (e.g. performance); perfect (record); without failure; without defeat",
+    "definitions": [
+      "① unhurt; uninjured; unwounded; unscathed; unharmed",
+      "② flawless (e.g. gem); unblemished; undamaged; perfect (condition)",
+      "③ spotless (e.g. reputation); faultless (e.g. performance); perfect (record); without failure; without defeat"
+    ],
+    "sentence": "たぶんそのときならば無傷で帰し",
+    "wordRange": [
+      10,
+      12
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/68.webp",
+    "thumbnailUrl": "/media/68_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 64,
+    "kind": "vocab",
+    "createdAt": 1791732748464,
+    "dateFormatted": "2026-10-11",
+    "term": "疑惑",
+    "reading": "ぎわく",
+    "pitchAccent": null,
+    "frequencyRank": 6571,
+    "definitionText": "doubt; misgivings; distrust; suspicion",
+    "definitions": [
+      "doubt; misgivings; distrust; suspicion"
+    ],
+    "sentence": "双厳は、この仕事自体に疑惑を感じていた。",
+    "wordRange": [
+      11,
+      13
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/64.webp",
+    "thumbnailUrl": "/media/64_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 63,
+    "kind": "vocab",
+    "createdAt": 1791732699231,
+    "dateFormatted": "2026-10-11",
+    "term": "議論を戦わす",
+    "reading": "ぎろんをたたかわす",
+    "pitchAccent": null,
+    "frequencyRank": 78391,
+    "definitionText": "to have a discussion",
+    "definitions": [
+      "to have a discussion"
+    ],
+    "sentence": "それよりもなによりも、この馴れ馴れしい兵法者と議論を戦わせるなどと馬鹿馬鹿しい事などしたくなかったし、",
+    "wordRange": [
+      23,
+      31
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/63.webp",
+    "thumbnailUrl": "/media/63_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 62,
+    "kind": "vocab",
+    "createdAt": 1791732609959,
+    "dateFormatted": "2026-10-11",
+    "term": "省みる",
+    "reading": "かえりみる",
+    "pitchAccent": null,
+    "frequencyRank": 22322,
+    "definitionText": "to reflect on (oneself, past conduct, etc.); to contemplate; to examine; to think over; to introspect",
+    "definitions": [
+      "to reflect on (oneself, past conduct, etc.); to contemplate; to examine; to think over; to introspect"
+    ],
+    "sentence": "「まあ、基本的な兵法ではある」「しかし、基本以上のものではない」「危険を省みなければいくらでも崖から攻めてくる手筈はある」",
+    "wordRange": [
+      36,
+      42
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/62.webp",
+    "thumbnailUrl": "/media/62_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 61,
+    "kind": "vocab",
+    "createdAt": 1791699661062,
+    "dateFormatted": "2026-10-11",
+    "term": "心許ない",
+    "reading": "こころもとない",
+    "pitchAccent": null,
+    "frequencyRank": 17380,
+    "definitionText": "① uneasy; unsure; anxious\n② unreliable; untrustworthy; erratic; undependable\n③ nervous; impatient; irritated from anxiety\n④ unclear; indistinct; vague",
+    "definitions": [
+      "① uneasy; unsure; anxious",
+      "② unreliable; untrustworthy; erratic; undependable",
+      "③ nervous; impatient; irritated from anxiety",
+      "④ unclear; indistinct; vague"
+    ],
+    "sentence": "「さすがに、当主殿も俺一人では心許ないというのもわからんでもない」",
+    "wordRange": [
+      15,
+      19
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/61.webp",
+    "thumbnailUrl": "/media/61_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 60,
+    "kind": "vocab",
+    "createdAt": 1791645015016,
+    "dateFormatted": "2026-10-10",
+    "term": "一緒くたに",
+    "reading": "いっしょくたに",
+    "pitchAccent": null,
+    "frequencyRank": 72936,
+    "definitionText": "jumbling together; lumping together; mixing up",
+    "definitions": [
+      "jumbling together; lumping together; mixing up"
+    ],
+    "sentence": "「俺もお前みたいなヤツの先輩という事で一緒くたにされたくはないからな」",
+    "wordRange": [
+      19,
+      24
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/60.webp",
+    "thumbnailUrl": "/media/60_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 59,
+    "kind": "vocab",
+    "createdAt": 1791643393778,
+    "dateFormatted": "2026-10-10",
+    "term": "年端もいかぬ",
+    "reading": "としはもいかぬ",
+    "pitchAccent": null,
+    "frequencyRank": 53119,
+    "definitionText": "of tender years; very young",
+    "definitions": [
+      "of tender years; very young"
+    ],
+    "sentence": "双厳の後ろを取ったのは年端もいかぬ少女であった。",
+    "wordRange": [
+      11,
+      17
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/59.webp",
+    "thumbnailUrl": "/media/59_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 58,
+    "kind": "vocab",
+    "createdAt": 1791642205608,
+    "dateFormatted": "2026-10-10",
+    "term": "屯する",
+    "reading": "たむろする",
+    "pitchAccent": null,
+    "frequencyRank": 22424,
+    "definitionText": "① to gather (of people); to assemble; to hang out\n② to assemble (of troops); to be stationed; to be quartered",
+    "definitions": [
+      "① to gather (of people); to assemble; to hang out",
+      "② to assemble (of troops); to be stationed; to be quartered"
+    ],
+    "sentence": "海岸に何人かの村人が屯している。",
+    "wordRange": [
+      10,
+      15
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/58.webp",
+    "thumbnailUrl": "/media/58_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 57,
+    "kind": "vocab",
+    "createdAt": 1791639814969,
+    "dateFormatted": "2026-10-10",
+    "term": "流木",
+    "reading": "りゅうぼく",
+    "pitchAccent": null,
+    "frequencyRank": 43073,
+    "definitionText": "driftwood",
+    "definitions": [
+      "driftwood"
+    ],
+    "sentence": "岸には普通に打ちあげられるだろう、流木がちらばっている。",
+    "wordRange": [
+      17,
+      19
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/57.webp",
+    "thumbnailUrl": "/media/57_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 55,
+    "kind": "vocab",
+    "createdAt": 1791628106161,
+    "dateFormatted": "2026-10-10",
+    "term": "明度",
+    "reading": "めいど",
+    "pitchAccent": null,
+    "frequencyRank": 52445,
+    "definitionText": "brightness; lightness",
+    "definitions": [
+      "brightness; lightness"
+    ],
+    "sentence": "たそがれ時の赤暗い明度。",
+    "wordRange": [
+      9,
+      11
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/55.webp",
+    "thumbnailUrl": "/media/55_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 54,
+    "kind": "vocab",
+    "createdAt": 1791623342158,
+    "dateFormatted": "2026-10-10",
+    "term": "至福",
+    "reading": "しふく",
+    "pitchAccent": null,
+    "frequencyRank": 13066,
+    "definitionText": "beatitude; supreme bliss",
+    "definitions": [
+      "beatitude; supreme bliss"
+    ],
+    "sentence": "が、数分もこの至福は続かなかった。",
+    "wordRange": [
+      7,
+      9
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/54.webp",
+    "thumbnailUrl": "/media/54_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 53,
+    "kind": "vocab",
+    "createdAt": 1791620319132,
+    "dateFormatted": "2026-10-10",
+    "term": "宜なるかな",
+    "reading": "むべなるかな",
+    "pitchAccent": null,
+    "frequencyRank": 67060,
+    "definitionText": "quite right; indeed; truly; well said",
+    "definitions": [
+      "quite right; indeed; truly; well said"
+    ],
+    "sentence": "「むべなるかな」と感じた。",
+    "wordRange": [
+      1,
+      7
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/53.webp",
+    "thumbnailUrl": "/media/53_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 52,
+    "kind": "vocab",
+    "createdAt": 1791619734281,
+    "dateFormatted": "2026-10-10",
+    "term": "至上命令",
+    "reading": "しじょうめいれい",
+    "pitchAccent": null,
+    "frequencyRank": 89662,
+    "definitionText": "unconditional command; must-obey order",
+    "definitions": [
+      "unconditional command; must-obey order"
+    ],
+    "sentence": "それがこのように魚の死体なんてものであっても、生きるために人を殺し続けている双厳には絶対に守らなければならない至上命令であったのだ。",
+    "wordRange": [
+      55,
+      59
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/52.webp",
+    "thumbnailUrl": "/media/52_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 51,
+    "kind": "vocab",
+    "createdAt": 1791613776218,
+    "dateFormatted": "2026-10-10",
+    "term": "漫遊",
+    "reading": "まんゆう",
+    "pitchAccent": null,
+    "frequencyRank": 81183,
+    "definitionText": "pleasure trip; tour",
+    "definitions": [
+      "pleasure trip; tour"
+    ],
+    "sentence": "「漫遊ではないがな……どちらかといえば流浪といったほうがあうな……」",
+    "wordRange": [
+      1,
+      3
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/51.webp",
+    "thumbnailUrl": "/media/51_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 50,
+    "kind": "vocab",
+    "createdAt": 1791613449259,
+    "dateFormatted": "2026-10-10",
+    "term": "綱紀",
+    "reading": "こうき",
+    "pitchAccent": null,
+    "frequencyRank": 100248,
+    "definitionText": "law and order; (official) discipline",
+    "definitions": [
+      "law and order; (official) discipline"
+    ],
+    "sentence": "「終始は綱紀の時なり」",
+    "wordRange": [
+      4,
+      6
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/50.webp",
+    "thumbnailUrl": "/media/50_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 49,
+    "kind": "vocab",
+    "createdAt": 1791613263667,
+    "dateFormatted": "2026-10-10",
+    "term": "戒名",
+    "reading": "かいみょう",
+    "pitchAccent": null,
+    "frequencyRank": 67655,
+    "definitionText": "posthumous Buddhist name",
+    "definitions": [
+      "posthumous Buddhist name"
+    ],
+    "sentence": "鳥居には家の名前も戒名のような",
+    "wordRange": [
+      9,
+      11
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/49.webp",
+    "thumbnailUrl": "/media/49_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 48,
+    "kind": "vocab",
+    "createdAt": 1791613094223,
+    "dateFormatted": "2026-10-10",
+    "term": "砂地",
+    "reading": "すなじ",
+    "pitchAccent": null,
+    "frequencyRank": 32880,
+    "definitionText": "sandy soil; sandy place",
+    "definitions": [
+      "sandy soil; sandy place"
+    ],
+    "sentence": "砂地の、しかも海底に埋められている･･････これがどのような事になるかはすぐに想像できる。",
+    "wordRange": [
+      0,
+      2
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/48.webp",
+    "thumbnailUrl": "/media/48_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 47,
+    "kind": "vocab",
+    "createdAt": 1791612761745,
+    "dateFormatted": "2026-10-10",
+    "term": "癇に障る",
+    "reading": "かんにさわる",
+    "pitchAccent": null,
+    "frequencyRank": 30484,
+    "definitionText": "to irritate; to offend; to provoke; to get on one's nerves",
+    "definitions": [
+      "to irritate; to offend; to provoke; to get on one's nerves"
+    ],
+    "sentence": "志乃の微笑はなぜか双厳の癇に障った。",
+    "wordRange": [
+      12,
+      17
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/47.webp",
+    "thumbnailUrl": "/media/47_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 46,
+    "kind": "vocab",
+    "createdAt": 1791611739508,
+    "dateFormatted": "2026-10-10",
+    "term": "須らく",
+    "reading": "すべからく",
+    "pitchAccent": null,
+    "frequencyRank": 39358,
+    "definitionText": "① absolutely (ought to); by all means\n② all; entirely",
+    "definitions": [
+      "① absolutely (ought to); by all means",
+      "② all; entirely"
+    ],
+    "sentence": "不審な点はすべからく調べるべきだ。",
+    "wordRange": [
+      5,
+      10
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/46.webp",
+    "thumbnailUrl": "/media/46_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 45,
+    "kind": "vocab",
+    "createdAt": 1791611502187,
+    "dateFormatted": "2026-10-10",
+    "term": "鬼門",
+    "reading": "きもん",
+    "pitchAccent": null,
+    "frequencyRank": 33641,
+    "definitionText": "① the northeastern (unlucky) direction; person or thing to be avoided\n② weak point; Achilles' heel",
+    "definitions": [
+      "① the northeastern (unlucky) direction; person or thing to be avoided",
+      "② weak point; Achilles' heel"
+    ],
+    "sentence": "「鳥居が鬼門の方向に向いていたら」",
+    "wordRange": [
+      4,
+      6
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/45.webp",
+    "thumbnailUrl": "/media/45_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 44,
+    "kind": "vocab",
+    "createdAt": 1791611231841,
+    "dateFormatted": "2026-10-10",
+    "term": "悪霊",
+    "reading": "あくりょう",
+    "pitchAccent": null,
+    "frequencyRank": 14286,
+    "definitionText": "evil spirit",
+    "definitions": [
+      "evil spirit"
+    ],
+    "sentence": "殺された怨念によりいつ悪霊になるとも知れな",
+    "wordRange": [
+      11,
+      13
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/44.webp",
+    "thumbnailUrl": "/media/44_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 43,
+    "kind": "vocab",
+    "createdAt": 1791611215595,
+    "dateFormatted": "2026-10-10",
+    "term": "怨念",
+    "reading": "おんねん",
+    "pitchAccent": null,
+    "frequencyRank": 14763,
+    "definitionText": "deep-seated grudge; hatred",
+    "definitions": [
+      "deep-seated grudge; hatred"
+    ],
+    "sentence": "殺された怨念によりいつ悪霊になるとも知れな",
+    "wordRange": [
+      4,
+      6
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/43.webp",
+    "thumbnailUrl": "/media/43_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 42,
+    "kind": "vocab",
+    "createdAt": 1791611197673,
+    "dateFormatted": "2026-10-10",
+    "term": "忌むべき",
+    "reading": "いむべき",
+    "pitchAccent": null,
+    "frequencyRank": 31291,
+    "definitionText": "abominable; detestable",
+    "definitions": [
+      "abominable; detestable"
+    ],
+    "sentence": "「鳥居は霊的なものの通り道だ」「つまり忌むべき存在である殺された子供の霊は",
+    "wordRange": [
+      19,
+      23
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/42.webp",
+    "thumbnailUrl": "/media/42_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 41,
+    "kind": "vocab",
+    "createdAt": 1791611145236,
+    "dateFormatted": "2026-10-10",
+    "term": "供養",
+    "reading": "くよう",
+    "pitchAccent": null,
+    "frequencyRank": 20602,
+    "definitionText": "memorial service for the dead; holding a service",
+    "definitions": [
+      "memorial service for the dead; holding a service"
+    ],
+    "sentence": "「そうじゃ………………」「間引かれた子供の供養のために鳥居を海岸に建てていくのじゃよ･･････」",
+    "wordRange": [
+      21,
+      23
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/41.webp",
+    "thumbnailUrl": "/media/41_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 40,
+    "kind": "vocab",
+    "createdAt": 1791610896132,
+    "dateFormatted": "2026-10-10",
+    "term": "多岐にわたる",
+    "reading": "たきにわたる",
+    "pitchAccent": null,
+    "frequencyRank": 31393,
+    "definitionText": "to be wide-ranging; to be diverse; to cover a lot of ground; to cover various topics",
+    "definitions": [
+      "to be wide-ranging; to be diverse; to cover a lot of ground; to cover various topics"
+    ],
+    "sentence": "双厳も一目置くほど多岐にわたって様々な知識を",
+    "wordRange": [
+      9,
+      16
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/40.webp",
+    "thumbnailUrl": "/media/40_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 39,
+    "kind": "vocab",
+    "createdAt": 1791610520410,
+    "dateFormatted": "2026-10-10",
+    "term": "閑散",
+    "reading": "かんさん",
+    "pitchAccent": null,
+    "frequencyRank": 16608,
+    "definitionText": "① deserted (esp. store, market, town, streets); quiet; still; hushed; empty\n② inactive (business, trade, etc.); slack; flat; off-season; quiet; dull\n③ idle; free; unoccupied",
+    "definitions": [
+      "① deserted (esp. store, market, town, streets); quiet; still; hushed; empty",
+      "② inactive (business, trade, etc.); slack; flat; off-season; quiet; dull",
+      "③ idle; free; unoccupied"
+    ],
+    "sentence": "村はあいかわらず閑散としている。",
+    "wordRange": [
+      8,
+      10
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/39.webp",
+    "thumbnailUrl": "/media/39_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 38,
+    "kind": "vocab",
+    "createdAt": 1791559205995,
+    "dateFormatted": "2026-10-09",
+    "term": "宮様",
+    "reading": "みやさま",
+    "pitchAccent": null,
+    "frequencyRank": 64917,
+    "definitionText": "prince; princess",
+    "definitions": [
+      "prince; princess"
+    ],
+    "sentence": "「その家柄は千年とも二千年とも言われている」「宮様よりも古い家柄なんて話もある」",
+    "wordRange": [
+      23,
+      25
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/38.webp",
+    "thumbnailUrl": "/media/38_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 37,
+    "kind": "vocab",
+    "createdAt": 1791509815832,
+    "dateFormatted": "2026-10-09",
+    "term": "余興",
+    "reading": "よきょう",
+    "pitchAccent": null,
+    "frequencyRank": 13949,
+    "definitionText": "performance (at a party or banquet, etc.); side show; entertainment",
+    "definitions": [
+      "performance (at a party or banquet, etc.); side show; entertainment"
+    ],
+    "sentence": "「余興だよ」",
+    "wordRange": [
+      1,
+      3
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/37.webp",
+    "thumbnailUrl": "/media/37_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 36,
+    "kind": "vocab",
+    "createdAt": 1791508076634,
+    "dateFormatted": "2026-10-09",
+    "term": "冷静沈着",
+    "reading": "れいせいちんちゃく",
+    "pitchAccent": null,
+    "frequencyRank": 35458,
+    "definitionText": "calm, cool, and collected; level and calm",
+    "definitions": [
+      "calm, cool, and collected; level and calm"
+    ],
+    "sentence": "そこにはいままで冷静沈着に修羅場をこえてきた",
+    "wordRange": [
+      8,
+      12
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/36.webp",
+    "thumbnailUrl": "/media/36_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 35,
+    "kind": "vocab",
+    "createdAt": 1791474876809,
+    "dateFormatted": "2026-10-08",
+    "term": "壮絶",
+    "reading": "そうぜつ",
+    "pitchAccent": null,
+    "frequencyRank": 10671,
+    "definitionText": "heroic; fierce; grand; sublime; magnificent",
+    "definitions": [
+      "heroic; fierce; grand; sublime; magnificent"
+    ],
+    "sentence": "いや、壮絶な死闘の後か?",
+    "wordRange": [
+      3,
+      5
+    ],
+    "tag": "二重影",
+    "workSlug": "futae-no-kage",
+    "workTitle": "Futae no Kage",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/35.webp",
+    "thumbnailUrl": "/media/35_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 32,
+    "kind": "vocab",
+    "createdAt": 1791441104484,
+    "dateFormatted": "2026-10-08",
+    "term": "ふくれっ面",
+    "reading": "ふくれっつら",
+    "pitchAccent": null,
+    "frequencyRank": 34092,
+    "definitionText": "sulky look (often with puffed cheeks); sullen look; pout; glower",
+    "definitions": [
+      "sulky look (often with puffed cheeks); sullen look; pout; glower"
+    ],
+    "sentence": "気難しくて、すぐふくれっ面をし、相手のことをいつでも気づかっているのに、それを全然おもてに出さない。",
+    "wordRange": [
+      8,
+      13
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/32.webp",
+    "thumbnailUrl": "/media/32_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 31,
+    "kind": "vocab",
+    "createdAt": 1791430872472,
+    "dateFormatted": "2026-10-08",
+    "term": "常軌を逸する",
+    "reading": "じょうきをいっする",
+    "pitchAccent": null,
+    "frequencyRank": 23890,
+    "definitionText": "to defy accepted norms; to go off the rails; to be eccentric",
+    "definitions": [
+      "to defy accepted norms; to go off the rails; to be eccentric"
+    ],
+    "sentence": "常軌を逸したあのふたりのもとで、綾は無事なのだろうか。",
+    "wordRange": [
+      0,
+      6
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/31.webp",
+    "thumbnailUrl": "/media/31_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 30,
+    "kind": "vocab",
+    "createdAt": 1791382484339,
+    "dateFormatted": "2026-10-07",
+    "term": "恫喝",
+    "reading": "どうかつ",
+    "pitchAccent": null,
+    "frequencyRank": 25334,
+    "definitionText": "intimidation; threat; bluster",
+    "definitions": [
+      "intimidation; threat; bluster"
+    ],
+    "sentence": "その声には警告とも、ことばは強過ぎるのだが恫喝ともとれるニュアンスがこもっているように感じられた。",
+    "wordRange": [
+      21,
+      23
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/30.webp",
+    "thumbnailUrl": "/media/30_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 29,
+    "kind": "vocab",
+    "createdAt": 1791305414178,
+    "dateFormatted": "2026-10-06",
+    "term": "依怙地",
+    "reading": "いこじ",
+    "pitchAccent": null,
+    "frequencyRank": 99620,
+    "definitionText": "obstinate; stubborn; obdurate; headstrong; willful; perverse",
+    "definitions": [
+      "obstinate; stubborn; obdurate; headstrong; willful; perverse"
+    ],
+    "sentence": "けれど、実際の綾はこの狂った場所で、自分を依怙地なまでに貫き通そうとしている。",
+    "wordRange": [
+      21,
+      24
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/29.webp",
+    "thumbnailUrl": "/media/29_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 28,
+    "kind": "vocab",
+    "createdAt": 1791302648480,
+    "dateFormatted": "2026-10-06",
+    "term": "霧散",
+    "reading": "むさん",
+    "pitchAccent": null,
+    "frequencyRank": 13960,
+    "definitionText": "dispersing; vanishing",
+    "definitions": [
+      "dispersing; vanishing"
+    ],
+    "sentence": "綾の姿は霧散する。",
+    "wordRange": [
+      4,
+      6
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/28.webp",
+    "thumbnailUrl": "/media/28_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 27,
+    "kind": "vocab",
+    "createdAt": 1791300044818,
+    "dateFormatted": "2026-10-06",
+    "term": "賛美歌",
+    "reading": "さんびか",
+    "pitchAccent": null,
+    "frequencyRank": 50848,
+    "definitionText": "hymn; psalm",
+    "definitions": [
+      "hymn; psalm"
+    ],
+    "sentence": "歌は聞こえるかどうかの微妙なものだったが、賛美歌のような印象があった。",
+    "wordRange": [
+      21,
+      24
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/27.webp",
+    "thumbnailUrl": "/media/27_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 26,
+    "kind": "vocab",
+    "createdAt": 1791279068163,
+    "dateFormatted": "2026-10-06",
+    "term": "淫靡",
+    "reading": "いんび",
+    "pitchAccent": null,
+    "frequencyRank": 16426,
+    "definitionText": "obscene; indecent; salacious; lascivious; lewd",
+    "definitions": [
+      "obscene; indecent; salacious; lascivious; lewd"
+    ],
+    "sentence": "どこか淫靡な視線で、ほくを品定めしている。",
+    "wordRange": [
+      3,
+      5
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/26.webp",
+    "thumbnailUrl": "/media/26_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 25,
+    "kind": "vocab",
+    "createdAt": 1791268244769,
+    "dateFormatted": "2026-10-06",
+    "term": "砂上の楼閣",
+    "reading": "さじょうのろうかく",
+    "pitchAccent": null,
+    "frequencyRank": 60587,
+    "definitionText": "house built on sand; house of cards",
+    "definitions": [
+      "house built on sand; house of cards"
+    ],
+    "sentence": "足もとが揺らげば、一瞬で壊れていってしまう砂上の楼閣。",
+    "wordRange": [
+      21,
+      26
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/25.webp",
+    "thumbnailUrl": "/media/25_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 24,
+    "kind": "vocab",
+    "createdAt": 1791257567865,
+    "dateFormatted": "2026-10-06",
+    "term": "立脚",
+    "reading": "りっきゃく",
+    "pitchAccent": null,
+    "frequencyRank": 87035,
+    "definitionText": "being based on",
+    "definitions": [
+      "being based on"
+    ],
+    "sentence": "確実なものに立脚しない限り、ぼくたちは足を踏み出すことができない。",
+    "wordRange": [
+      6,
+      8
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/24.webp",
+    "thumbnailUrl": "/media/24_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 23,
+    "kind": "vocab",
+    "createdAt": 1791247498885,
+    "dateFormatted": "2026-10-06",
+    "term": "氷解",
+    "reading": "ひょうかい",
+    "pitchAccent": null,
+    "frequencyRank": 34632,
+    "definitionText": "① being cleared (of doubt, misgivings, etc.); being dispelled; melting away\n② melting (of ice)",
+    "definitions": [
+      "① being cleared (of doubt, misgivings, etc.); being dispelled; melting away",
+      "② melting (of ice)"
+    ],
+    "sentence": "からみあっていた疑問が氷解し、わだかまっていた不安が消えていく。",
+    "wordRange": [
+      11,
+      13
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/23.webp",
+    "thumbnailUrl": "/media/23_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 22,
+    "kind": "vocab",
+    "createdAt": 1791181766622,
+    "dateFormatted": "2026-10-05",
+    "term": "除外",
+    "reading": "じょがい",
+    "pitchAccent": null,
+    "frequencyRank": 15331,
+    "definitionText": "exception; exclusion",
+    "definitions": [
+      "exception; exclusion"
+    ],
+    "sentence": "知ってるところを除外しても、まだ大量にある。",
+    "wordRange": [
+      8,
+      10
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/22.webp",
+    "thumbnailUrl": "/media/22_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 21,
+    "kind": "vocab",
+    "createdAt": 1791179993799,
+    "dateFormatted": "2026-10-05",
+    "term": "黙殺",
+    "reading": "もくさつ",
+    "pitchAccent": null,
+    "frequencyRank": 29076,
+    "definitionText": "ignoring; disregarding; taking no notice of; refusing to comment on; turning a deaf ear to",
+    "definitions": [
+      "ignoring; disregarding; taking no notice of; refusing to comment on; turning a deaf ear to"
+    ],
+    "sentence": "その女性は、ほくたちを黙殺して、行ってしまった。",
+    "wordRange": [
+      11,
+      13
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/21.webp",
+    "thumbnailUrl": "/media/21_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 20,
+    "kind": "vocab",
+    "createdAt": 1791176406628,
+    "dateFormatted": "2026-10-05",
+    "term": "キボンヌ",
+    "reading": "キボンヌ",
+    "pitchAccent": null,
+    "frequencyRank": 125001,
+    "definitionText": "I'm hoping for ...; I want ...; I'd like ...; ..., please",
+    "definitions": [
+      "I'm hoping for ...; I want ...; I'd like ...; ..., please"
+    ],
+    "sentence": "和風のハードなやつキボンヌ。",
+    "wordRange": [
+      9,
+      13
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/20.webp",
+    "thumbnailUrl": "/media/20_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 19,
+    "kind": "vocab",
+    "createdAt": 1791172625988,
+    "dateFormatted": "2026-10-05",
+    "term": "桜吹雪",
+    "reading": "さくらふぶき",
+    "pitchAccent": null,
+    "frequencyRank": 47299,
+    "definitionText": "blizzard of falling cherry blossoms; flurry of falling cherry blossoms",
+    "definitions": [
+      "blizzard of falling cherry blossoms; flurry of falling cherry blossoms"
+    ],
+    "sentence": "けれど、そこは見渡す限り、桜吹雪の海だった。",
+    "wordRange": [
+      13,
+      16
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/19.webp",
+    "thumbnailUrl": "/media/19_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 18,
+    "kind": "vocab",
+    "createdAt": 1791122401689,
+    "dateFormatted": "2026-10-04",
+    "term": "無闇やたら",
+    "reading": "むやみやたら",
+    "pitchAccent": null,
+    "frequencyRank": 37232,
+    "definitionText": "① thoughtless; reckless; rash; indiscriminate; indiscreet\n② excessive; unreasonable; immoderate; absurd",
+    "definitions": [
+      "① thoughtless; reckless; rash; indiscriminate; indiscreet",
+      "② excessive; unreasonable; immoderate; absurd"
+    ],
+    "sentence": "そして、無闇やたらとくくりつけられた装飾品。",
+    "wordRange": [
+      4,
+      9
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/18.webp",
+    "thumbnailUrl": "/media/18_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 17,
+    "kind": "vocab",
+    "createdAt": 1791110724659,
+    "dateFormatted": "2026-10-04",
+    "term": "猥雑",
+    "reading": "わいざつ",
+    "pitchAccent": null,
+    "frequencyRank": 46286,
+    "definitionText": "① vulgar; indecent; crude; sordid\n② jumbled (of a place); disorderly; chaotic; messy",
+    "definitions": [
+      "① vulgar; indecent; crude; sordid",
+      "② jumbled (of a place); disorderly; chaotic; messy"
+    ],
+    "sentence": "この猥雑な夜の雑踏の中だと、あの人は保護色のように溶けこんでしまう。",
+    "wordRange": [
+      2,
+      4
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/17.webp",
+    "thumbnailUrl": "/media/17_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 16,
+    "kind": "vocab",
+    "createdAt": 1791108124064,
+    "dateFormatted": "2026-10-04",
+    "term": "波瀾",
+    "reading": "はらん",
+    "pitchAccent": null,
+    "frequencyRank": 77623,
+    "definitionText": "① disturbance; trouble; commotion; uproar; turmoil\n② ups and downs (e.g. in life); vicissitudes\n③ small and large waves",
+    "definitions": [
+      "① disturbance; trouble; commotion; uproar; turmoil",
+      "② ups and downs (e.g. in life); vicissitudes",
+      "③ small and large waves"
+    ],
+    "sentence": "もう充分波瀾だらけだと思うんですけど。",
+    "wordRange": [
+      4,
+      6
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/16.webp",
+    "thumbnailUrl": "/media/16_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 15,
+    "kind": "vocab",
+    "createdAt": 1791103236653,
+    "dateFormatted": "2026-10-04",
+    "term": "健康優良児",
+    "reading": "けんこうゆうりょうじ",
+    "pitchAccent": null,
+    "frequencyRank": 64934,
+    "definitionText": "exceptionally healthy child; prize-winning child in a health contest; picture of health",
+    "definitions": [
+      "exceptionally healthy child; prize-winning child in a health contest; picture of health"
+    ],
+    "sentence": "健康優良児な玉が欠席というのは珍しいことだった。",
+    "wordRange": [
+      0,
+      5
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/15.webp",
+    "thumbnailUrl": "/media/15_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 13,
+    "kind": "vocab",
+    "createdAt": 1791101725391,
+    "dateFormatted": "2026-10-04",
+    "term": "危険性",
+    "reading": "きけんせい",
+    "pitchAccent": null,
+    "frequencyRank": 8099,
+    "definitionText": "(degree of) risk; riskiness; danger",
+    "definitions": [
+      "(degree of) risk; riskiness; danger"
+    ],
+    "sentence": "あの人は、たぶん事態の危険性をまるで理解していないから。",
+    "wordRange": [
+      11,
+      14
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/13.webp",
+    "thumbnailUrl": "/media/13_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 12,
+    "kind": "vocab",
+    "createdAt": 1791101087623,
+    "dateFormatted": "2026-10-04",
+    "term": "極秘",
+    "reading": "ごくひ",
+    "pitchAccent": null,
+    "frequencyRank": 11720,
+    "definitionText": "absolute secrecy",
+    "definitions": [
+      "absolute secrecy"
+    ],
+    "sentence": "偶然、極秘のファイルにアクセスする可能性は、どれくらいあるのだろう。",
+    "wordRange": [
+      3,
+      5
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/12.webp",
+    "thumbnailUrl": "/media/12_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 11,
+    "kind": "vocab",
+    "createdAt": 1791100094654,
+    "dateFormatted": "2026-10-04",
+    "term": "心神耗弱",
+    "reading": "しんしんこうじゃく",
+    "pitchAccent": null,
+    "frequencyRank": 106945,
+    "definitionText": "diminished capacity; diminished responsibility",
+    "definitions": [
+      "diminished capacity; diminished responsibility"
+    ],
+    "sentence": "それでーシンシンコージャクで一責任能力はなかった~ってゆーつもりなんだよー、きっとー」。",
+    "wordRange": [
+      4,
+      13
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/11.webp",
+    "thumbnailUrl": "/media/11_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 8,
+    "kind": "vocab",
+    "createdAt": 1791095171856,
+    "dateFormatted": "2026-10-04",
+    "term": "陰謀",
+    "reading": "いんぼう",
+    "pitchAccent": null,
+    "frequencyRank": 10042,
+    "definitionText": "① plot; intrigue; scheme\n② conspiracy",
+    "definitions": [
+      "① plot; intrigue; scheme",
+      "② conspiracy"
+    ],
+    "sentence": "丸藤さんは役所ぐるみの(もしかすると政府とか国家のレベルなのかもしれない) 陰謀に巻き込まれている。",
+    "wordRange": [
+      38,
+      40
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/8.webp",
+    "thumbnailUrl": "/media/8_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 7,
+    "kind": "vocab",
+    "createdAt": 1791093794833,
+    "dateFormatted": "2026-10-04",
+    "term": "萎縮",
+    "reading": "いしゅく",
+    "pitchAccent": null,
+    "frequencyRank": 13179,
+    "definitionText": "① withering; shrivelling; shrinking\n② contraction; atrophy",
+    "definitions": [
+      "① withering; shrivelling; shrinking",
+      "② contraction; atrophy"
+    ],
+    "sentence": "ほくは逆に、萎縮もせず、ごく普通にオフィスを探す丸藤さんに感心する。",
+    "wordRange": [
+      6,
+      8
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/7.webp",
+    "thumbnailUrl": "/media/7_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 6,
+    "kind": "vocab",
+    "createdAt": 1791093703014,
+    "dateFormatted": "2026-10-04",
+    "term": "屈託ない",
+    "reading": "くったくない",
+    "pitchAccent": null,
+    "frequencyRank": 20309,
+    "definitionText": "carefree; free from worry",
+    "definitions": [
+      "carefree; free from worry"
+    ],
+    "sentence": "丸藤さんは、屈託なく笑っていた。",
+    "wordRange": [
+      6,
+      10
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/6.webp",
+    "thumbnailUrl": "/media/6_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 5,
+    "kind": "vocab",
+    "createdAt": 1791092437313,
+    "dateFormatted": "2026-10-04",
+    "term": "汚職",
+    "reading": "おしょく",
+    "pitchAccent": null,
+    "frequencyRank": 31629,
+    "definitionText": "corruption (esp. by a government employee); bribery; graft",
+    "definitions": [
+      "corruption (esp. by a government employee); bribery; graft"
+    ],
+    "sentence": "汚職とか、そーゆーことにからんでいるかは別にして、なにかを知ってるのはまちがいないと思うんですけど",
+    "wordRange": [
+      0,
+      2
+    ],
+    "tag": "インタールード",
+    "workSlug": "interlude",
+    "workTitle": "Interlude",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/5.webp",
+    "thumbnailUrl": "/media/5_thumb.webp",
+    "twitchClipUrl": null
+  }
+]

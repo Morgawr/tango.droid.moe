@@ -1,0 +1,257 @@
+---
+import type { WordItem } from '../utils/text';
+import { formatSentenceHtml, extractTwitchClipSlug } from '../utils/text';
+
+interface Props {
+  word: WordItem;
+  isModal?: boolean;
+}
+
+const { word, isModal = false } = Astro.props;
+const highlightedSentence = formatSentenceHtml(word.sentence, word.term, word.wordRange);
+const hasClip = Boolean(word.twitchClipUrl);
+const clipSlug = extractTwitchClipSlug(word.twitchClipUrl);
+---
+
+<div class="word-detail-container flex flex-col gap-6" data-word-id={word.id}>
+  <!-- Top Meta Header -->
+  <div class="border-b border-border-default pb-4 flex flex-wrap items-start justify-between gap-4">
+    <div>
+      <div class="flex items-baseline gap-3 sm:gap-4 flex-wrap">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold font-jp text-text-bright tracking-tight">
+          {word.term}
+        </h1>
+        <span class="text-lg sm:text-2xl text-text-muted font-mono">
+          {word.reading}
+        </span>
+      </div>
+
+      <!-- Pitch Accent (Hidden with zero layout shift if null) -->
+      {word.pitchAccent && (
+        <div class="mt-2 text-xs font-mono text-accent-amber flex items-center gap-2">
+          <span class="text-text-dim">PITCH:</span>
+          <span>{word.pitchAccent.pattern || `Pattern [${word.pitchAccent.downstep}]`}</span>
+        </div>
+      )}
+    </div>
+
+    <!-- Metadata Badges -->
+    <div class="flex flex-col items-start sm:items-end gap-1.5 font-mono text-xs text-text-dim">
+      <div class="flex items-center gap-2">
+        <span class="text-text-bright font-bold">[ ENTRY #{word.id} ]</span>
+        {hasClip && (
+          <span class="border border-accent-rust/70 bg-canvas text-accent-rust px-2 py-0.5 font-bold">
+            [ TWITCH CLIP ]
+          </span>
+        )}
+      </div>
+      <div class="flex items-center gap-2 text-text-muted">
+        <span>Work:</span>
+        <a href={`/works/${word.workSlug}`} class="text-accent-amber hover:underline">
+          [ {word.workTitle} ]
+        </a>
+      </div>
+      <div class="flex items-center gap-3">
+        {word.frequencyRank && (
+          <span>Freq: <strong class="text-text-main">#{word.frequencyRank}</strong></span>
+        )}
+        <span>Date: <strong class="text-text-main">{word.dateFormatted}</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Media Section: Asymmetric Layout -->
+  <section class="media-section">
+    <div class="text-xs font-mono text-text-dim mb-2 flex items-center justify-between">
+      <span>// VISUAL MEDIA & SOURCE CAPTURE</span>
+      {hasClip && <span>[ DUAL MEDIA MODE ]</span>}
+    </div>
+
+    {hasClip ? (
+      <!-- Two-column split layout when clip exists -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <!-- In-game Full Screenshot -->
+        <div class="flex flex-col border border-border-default bg-surface">
+          <div class="px-3 py-1.5 bg-surface-alt border-b border-border-default text-xs font-mono text-text-muted flex justify-between">
+            <span>[ IN-GAME SCREENSHOT ]</span>
+            <span>100% CAPTURE</span>
+          </div>
+          <div class="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
+            {word.screenshotUrl ? (
+              <img
+                src={word.screenshotUrl}
+                alt={`In-game screenshot of ${word.term}`}
+                class="w-full h-full object-contain"
+                loading="eager"
+              />
+            ) : (
+              <span class="text-text-dim font-mono text-xs">[ NO SCREENSHOT AVAILABLE ]</span>
+            )}
+          </div>
+        </div>
+
+        <!-- Twitch Clip Player -->
+        <div class="flex flex-col border border-border-default bg-surface">
+          <div class="px-3 py-1.5 bg-surface-alt border-b border-border-default text-xs font-mono text-text-muted flex justify-between items-center">
+            <span class="text-accent-rust font-semibold">[ TWITCH STREAM CLIP ]</span>
+            <a
+              href={word.twitchClipUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-accent-amber hover:underline flex items-center gap-1"
+            >
+              [ Open Link &nearr; ]
+            </a>
+          </div>
+          <div 
+            class="relative aspect-video bg-black flex items-center justify-center twitch-embed-container"
+            data-clip-slug={clipSlug}
+            data-clip-url={word.twitchClipUrl}
+          >
+            <div class="twitch-fallback text-center p-4">
+              <p class="text-xs font-mono text-text-dim mb-3">
+                Loading Twitch player...
+              </p>
+              <a
+                href={word.twitchClipUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block px-3 py-2 border border-accent-rust text-accent-rust font-mono text-xs hover:bg-accent-rust hover:text-canvas transition-colors"
+              >
+                [ Watch Clip on Twitch &nearr; ]
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    ) : (
+      <!-- Full Hero Width Screenshot when no clip exists -->
+      <div class="border border-border-default bg-surface">
+        <div class="px-3 py-1.5 bg-surface-alt border-b border-border-default text-xs font-mono text-text-muted flex justify-between">
+          <span>[ IN-GAME SCREENSHOT ]</span>
+          <span>FULL HERO WIDTH</span>
+        </div>
+        <div class="relative w-full aspect-video max-h-[520px] bg-black flex items-center justify-center overflow-hidden">
+          {word.screenshotUrl ? (
+            <img
+              src={word.screenshotUrl}
+              alt={`In-game screenshot of ${word.term}`}
+              class="w-full h-full object-contain"
+              loading="eager"
+            />
+          ) : (
+            <span class="text-text-dim font-mono text-xs">[ NO SCREENSHOT AVAILABLE ]</span>
+          )}
+        </div>
+      </div>
+    )}
+  </section>
+
+  <!-- Context Sentence Section -->
+  <section class="sentence-section">
+    <div class="text-xs font-mono text-text-dim mb-2">
+      // CONTEXT SENTENCE ({word.workTitle})
+    </div>
+    <div class="border border-border-default bg-surface-alt p-4 sm:p-5">
+      <blockquote 
+        class="text-lg sm:text-xl md:text-2xl font-jp text-text-bright leading-relaxed"
+        set:html={highlightedSentence}
+      />
+    </div>
+  </section>
+
+  <!-- English Definitions Section -->
+  <section class="definitions-section">
+    <div class="text-xs font-mono text-text-dim mb-2">
+      // DICTIONARY DEFINITIONS & GLOSSES
+    </div>
+    <div class="border border-border-default bg-surface-alt p-4 sm:p-5">
+      {word.definitions && word.definitions.length > 0 ? (
+        <ul class="space-y-3 font-mono text-sm sm:text-base text-text-main">
+          {word.definitions.map((def, idx) => (
+            <li class="flex items-start gap-3">
+              <span class="text-accent-amber font-semibold shrink-0">[{idx + 1}]</span>
+              <span>{def}</span>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="font-mono text-sm text-text-muted">
+          {word.definitionText || 'No definitions recorded.'}
+        </p>
+      )}
+    </div>
+  </section>
+
+  <!-- Control & Action Bar -->
+  <div class="border-t border-border-default pt-4 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+    <div class="flex items-center gap-2">
+      <button 
+        type="button" 
+        class="copy-link-btn px-3 py-1.5 border border-border-default hover:border-accent-amber bg-surface hover:bg-surface-alt text-text-main transition-colors"
+        data-copy-url={`/words/${word.id}`}
+      >
+        [ Copy Permalink ]
+      </button>
+      {isModal && (
+        <a 
+          href={`/words/${word.id}`}
+          class="px-3 py-1.5 border border-border-default hover:border-accent-amber bg-surface hover:bg-surface-alt text-text-muted hover:text-text-bright transition-colors"
+        >
+          [ Full Standalone View &rarr; ]
+        </a>
+      )}
+    </div>
+
+    <div class="text-text-dim">
+      <span>CARD TYPE: <span class="text-text-bright">{word.kind.toUpperCase()}</span></span>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Initialize Twitch clip embeds dynamically with accurate parent parameter
+  function setupTwitchEmbeds() {
+    const containers = document.querySelectorAll<HTMLElement>('.twitch-embed-container');
+    const hostname = window.location.hostname || 'localhost';
+
+    containers.forEach((container) => {
+      const clipSlug = container.getAttribute('data-clip-slug');
+      if (!clipSlug) return;
+      if (container.querySelector('iframe')) return; // already loaded
+
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://clips.twitch.tv/embed?clip=${clipSlug}&parent=${hostname}&autoplay=false`;
+      iframe.className = 'w-full h-full border-0';
+      iframe.allowFullscreen = true;
+      iframe.title = 'Twitch Clip Player';
+
+      // Clear fallback and append iframe
+      container.innerHTML = '';
+      container.appendChild(iframe);
+    });
+  }
+
+  // Setup permalink copying
+  function setupCopyButtons() {
+    document.querySelectorAll<HTMLButtonElement>('.copy-link-btn').forEach((btn) => {
+      btn.onclick = async () => {
+        const path = btn.getAttribute('data-copy-url');
+        const url = `${window.location.origin}${path}`;
+        try {
+          await navigator.clipboard.writeText(url);
+          const orig = btn.textContent;
+          btn.textContent = '[ Copied! ]';
+          setTimeout(() => {
+            btn.textContent = orig;
+          }, 2000);
+        } catch {
+          prompt('Copy link:', url);
+        }
+      };
+    });
+  }
+
+  setupTwitchEmbeds();
+  setupCopyButtons();
+</script>

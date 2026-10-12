@@ -1,0 +1,22 @@
+{
+  "インタールード": {
+    "slug": "interlude",
+    "title": "Interlude",
+    "titleJapanese": "インタールード",
+    "vndbId": "v388",
+    "vndbRating": 7.82,
+    "developer": "Longshot",
+    "releaseYear": 2003,
+    "description": "A psychological mystery visual novel featuring dynamic parallax scenes and an intricate branching timeline."
+  },
+  "二重影": {
+    "slug": "futae-no-kage",
+    "title": "Futae no Kage",
+    "titleJapanese": "二重影",
+    "vndbId": "v1330",
+    "vndbRating": 6.94,
+    "developer": "TACTICS",
+    "releaseYear": 2000,
+    "description": "A dark historical fantasy visual novel following a warrior cursed with a shadow of another identity."
+  }
+}

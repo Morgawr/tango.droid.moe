@@ -1,0 +1,42 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  theme: {
+    extend: {
+      colors: {
+        canvas: '#171614',
+        surface: '#1e1c19',
+        'surface-alt': '#24211d',
+        'surface-hover': '#2a2723',
+        'border-dim': '#2d2a26',
+        'border-default': '#38342f',
+        'border-focus': '#524c44',
+        'text-bright': '#e6ded3',
+        'text-main': '#dcd5cc',
+        'text-muted': '#948d84',
+        'text-dim': '#736c63',
+        'accent-amber': '#c49c48',
+        'accent-amber-dim': '#8c6f32',
+        'accent-rust': '#b35e52',
+        'accent-rust-dim': '#7c3f37',
+      },
+      fontFamily: {
+        mono: ['"IBM Plex Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+        sans: ['"IBM Plex Sans"', '"Noto Sans JP"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+        jp: ['"Noto Sans JP"', '"Hiragino Kaku Gothic ProN"', '"Meiryo"', '"MS Gothic"', 'sans-serif'],
+      },
+      borderRadius: {
+        none: '0px',
+        DEFAULT: '0px',
+        sm: '0px',
+        md: '0px',
+        lg: '0px',
+        xl: '0px',
+        '2xl': '0px',
+        '3xl': '0px',
+        full: '0px',
+      },
+    },
+  },
+  plugins: [],
+};

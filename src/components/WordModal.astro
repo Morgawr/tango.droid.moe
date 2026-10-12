@@ -1,0 +1,67 @@
+---
+// WordModal component for client-side modal view on explorer page
+---
+
+<div
+  id="word-modal"
+  class="fixed inset-0 z-50 hidden bg-black/85 p-2 sm:p-4 flex items-center justify-center select-none"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Word Detail Modal"
+>
+  <!-- Modal Dialog Container -->
+  <div 
+    class="relative w-full max-w-4xl max-h-[92vh] flex flex-col bg-surface border-2 border-border-default shadow-2xl select-text"
+    id="word-modal-dialog"
+  >
+    <!-- Top Retro Titlebar -->
+    <div class="px-4 py-2.5 bg-surface-alt border-b border-border-default flex items-center justify-between font-mono text-xs text-text-muted select-none">
+      <div class="flex items-center gap-2">
+        <span class="text-accent-amber font-bold">[ SYS.VIEW ]</span>
+        <span id="modal-titlebar-entry" class="text-text-bright font-semibold">ENTRY</span>
+        <span class="text-border-default">|</span>
+        <span id="modal-titlebar-work" class="text-text-muted">WORK</span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <span class="text-text-dim hidden sm:inline">[ PRESS ESC TO EXIT ]</span>
+        <button
+          type="button"
+          id="modal-close-btn"
+          class="px-2 py-0.5 border border-border-default hover:border-accent-amber hover:text-accent-amber bg-surface text-text-bright font-mono transition-colors"
+          aria-label="Close dialog"
+        >
+          [ CLOSE &times; ]
+        </button>
+      </div>
+    </div>
+
+    <!-- Scrollable Modal Body -->
+    <div id="modal-content" class="overflow-y-auto p-4 sm:p-6 space-y-6">
+      <!-- Injected dynamically via client-side script -->
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="px-4 py-2.5 bg-surface-alt border-t border-border-default flex items-center justify-between font-mono text-xs select-none">
+      <button
+        type="button"
+        id="modal-prev-btn"
+        class="px-3 py-1 border border-border-default hover:border-accent-amber bg-surface text-text-muted hover:text-text-bright transition-colors"
+      >
+        [ &larr; PREVIOUS ]
+      </button>
+
+      <span id="modal-nav-counter" class="text-text-dim">
+        0 / 0
+      </span>
+
+      <button
+        type="button"
+        id="modal-next-btn"
+        class="px-3 py-1 border border-border-default hover:border-accent-amber bg-surface text-text-muted hover:text-text-bright transition-colors"
+      >
+        [ NEXT &rarr; ]
+      </button>
+    </div>
+  </div>
+</div>

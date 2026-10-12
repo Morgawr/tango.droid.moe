@@ -1,0 +1,90 @@
+---
+import type { WordItem } from '../utils/text';
+import { formatSentenceHtml } from '../utils/text';
+
+interface Props {
+  word: WordItem;
+}
+
+const { word } = Astro.props;
+const highlightedSentence = formatSentenceHtml(word.sentence, word.term, word.wordRange);
+const hasClip = Boolean(word.twitchClipUrl);
+---
+
+<article
+  class="word-card group border border-border-default hover:border-accent-amber/70 bg-surface hover:bg-surface-alt transition-colors duration-150 flex flex-col cursor-pointer"
+  data-id={word.id}
+  data-term={word.term}
+  data-reading={word.reading}
+  data-work-slug={word.workSlug}
+  data-work-title={word.workTitle}
+  data-has-clip={hasClip ? 'true' : 'false'}
+  data-frequency={word.frequencyRank || 999999}
+  data-created={word.createdAt}
+>
+  <a href={`/words/${word.id}`} class="block flex-1 flex flex-col p-4 focus:outline-none focus:ring-1 focus:ring-accent-amber" data-card-link>
+    <!-- Card Top Header -->
+    <div class="flex items-start justify-between gap-3 mb-3">
+      <div class="flex flex-col">
+        <h3 class="text-xl sm:text-2xl font-bold font-jp text-text-bright tracking-tight group-hover:text-accent-amber transition-colors">
+          {word.term}
+        </h3>
+        <span class="text-xs sm:text-sm text-text-muted font-mono tracking-wide">
+          {word.reading}
+        </span>
+      </div>
+
+      <div class="flex flex-col items-end gap-1.5 shrink-0 font-mono text-xs">
+        {hasClip && (
+          <span class="border border-accent-rust/60 text-accent-rust bg-canvas px-1.5 py-0.5 font-bold tracking-wider">
+            [ CLIP ]
+          </span>
+        )}
+        {word.frequencyRank && (
+          <span class="border border-border-dim text-text-dim bg-canvas px-1.5 py-0.5">
+            #{word.frequencyRank}
+          </span>
+        )}
+      </div>
+    </div>
+
+    <!-- Screenshot Thumbnail -->
+    <div class="relative w-full aspect-video bg-black border border-border-dim overflow-hidden mb-3">
+      {word.thumbnailUrl ? (
+        <img
+          src={word.thumbnailUrl}
+          alt={`Screenshot for ${word.term}`}
+          loading="lazy"
+          class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-200"
+        />
+      ) : (
+        <div class="w-full h-full flex items-center justify-center text-text-dim text-xs font-mono">
+          [ NO SCREENSHOT ]
+        </div>
+      )}
+    </div>
+
+    <!-- Dialogue Sentence -->
+    <div class="mb-3 flex-1">
+      <p 
+        class="text-xs sm:text-sm text-text-main font-jp leading-relaxed line-clamp-2"
+        set:html={highlightedSentence}
+      />
+    </div>
+
+    <!-- English Definition -->
+    <div class="mb-3 pt-2 border-t border-border-dim">
+      <p class="text-xs text-text-muted font-mono line-clamp-2">
+        {word.definitionText || (word.definitions && word.definitions[0]) || 'No definition available.'}
+      </p>
+    </div>
+
+    <!-- Card Footer -->
+    <div class="mt-auto pt-2 border-t border-border-dim flex items-center justify-between text-xs font-mono text-text-dim">
+      <span class="text-text-muted truncate max-w-[170px]">
+        [ {word.workTitle || word.tag} ]
+      </span>
+      <span>{word.dateFormatted}</span>
+    </div>
+  </a>
+</article>

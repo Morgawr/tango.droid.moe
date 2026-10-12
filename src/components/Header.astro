@@ -1,0 +1,70 @@
+---
+import words from '../data/words.json';
+import works from '../data/works.json';
+
+interface Props {
+  currentNav?: 'words' | 'works';
+}
+
+const { currentNav = 'words' } = Astro.props;
+const totalWords = words.length;
+const totalWorks = works.length;
+const totalClips = words.filter(w => w.twitchClipUrl).length;
+---
+
+<header class="border-b border-border-default bg-surface select-none">
+  <!-- Top System Header Bar -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-y-2 border-b border-border-dim text-xs font-mono text-text-dim">
+    <div class="flex items-center gap-3">
+      <span class="text-accent-amber font-semibold tracking-wider">[ SYS.TAN ]</span>
+      <span class="hidden sm:inline text-text-muted">RETRO ARCHIVE TERMINAL</span>
+      <span class="text-border-default">|</span>
+      <span>v0.1.0-STABLE</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <span>WORDS: <span class="text-text-bright font-bold">{totalWords}</span></span>
+      <span class="text-border-default">/</span>
+      <span>WORKS: <span class="text-text-bright font-bold">{totalWorks}</span></span>
+      <span class="text-border-default">/</span>
+      <span>CLIPS: <span class="text-accent-rust font-bold">{totalClips}</span></span>
+    </div>
+  </div>
+
+  <!-- Primary Navigation Bar -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-4">
+    <div class="flex items-center gap-3 sm:gap-4">
+      <a href="/" class="group flex items-baseline gap-2.5 focus:outline-none">
+        <span class="font-mono text-xl sm:text-2xl font-bold tracking-tight text-text-bright group-hover:text-accent-amber transition-colors">
+          tango.droid.moe
+        </span>
+        <span class="text-xs font-mono text-text-dim hidden md:inline">
+          // VOCABULARY VAULT
+        </span>
+      </a>
+    </div>
+
+    <!-- Retro Nav Links -->
+    <nav class="flex items-center gap-2 font-mono text-sm">
+      <a 
+        href="/" 
+        class={`px-3 py-1.5 border transition-colors ${
+          currentNav === 'words' 
+            ? 'border-accent-amber bg-surface-alt text-accent-amber font-semibold' 
+            : 'border-border-default bg-surface text-text-muted hover:text-text-bright hover:border-border-focus'
+        }`}
+      >
+        [ Words ]
+      </a>
+      <a 
+        href="/works" 
+        class={`px-3 py-1.5 border transition-colors ${
+          currentNav === 'works' 
+            ? 'border-accent-amber bg-surface-alt text-accent-amber font-semibold' 
+            : 'border-border-default bg-surface text-text-muted hover:text-text-bright hover:border-border-focus'
+        }`}
+      >
+        [ Works ]
+      </a>
+    </nav>
+  </div>
+</header>

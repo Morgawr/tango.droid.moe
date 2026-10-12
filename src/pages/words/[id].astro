@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WordDetail from '../../components/WordDetail.astro';
+import words from '../../data/words.json';
+import type { WordItem } from '../../utils/text';
+
+export async function getStaticPaths() {
+  const allWords = words as WordItem[];
+  return allWords.map((w, index) => {
+    const prevWord = index > 0 ? allWords[index - 1] : null;
+    const nextWord = index < allWords.length - 1 ? allWords[index + 1] : null;
+    return {
+      params: { id: String(w.id) },
+      props: { 
+        word: w,
+        prevId: prevWord ? prevWord.id : null,
+        nextId: nextWord ? nextWord.id : null,
+      },
+    };
+  });
+}
+
+interface Props {
+  word: WordItem;
+  prevId: number | null;
+  nextId: number | null;
+}
+
+const { word, prevId, nextId } = Astro.props;
+
+const pageTitle = `${word.term} (${word.reading}) — tango.droid.moe`;
+const pageDescription = `Mined vocabulary entry from ${word.workTitle}: "${word.sentence}"`;
+---
+
+<BaseLayout 
+  title={pageTitle} 
+  description={pageDescription}
+  image={word.screenshotUrl || undefined}
+  currentNav="words"
+>
+  <div class="max-w-4xl mx-auto">
+    <!-- Top Action Breadcrumb -->
+    <div class="flex items-center justify-between gap-4 mb-6 font-mono text-xs select-none">
+      <a 
+        href="/" 
+        class="inline-flex items-center gap-1.5 px-3 py-1.5 border border-border-default hover:border-accent-amber bg-surface hover:bg-surface-alt text-text-muted hover:text-accent-amber transition-colors"
+      >
+        [ &larr; Return to Explorer ]
+      </a>
+
+      <!-- Prev / Next Navigation -->
+      <div class="flex items-center gap-2">
+        {prevId ? (
+          <a
+            href={`/words/${prevId}`}
+            class="px-2.5 py-1.5 border border-border-default hover:border-accent-amber bg-surface text-text-muted hover:text-text-bright transition-colors"
+          >
+            [ &larr; Prev ]
+          </a>
+        ) : (
+          <span class="px-2.5 py-1.5 border border-border-dim bg-canvas text-text-dim cursor-not-allowed">
+            [ &larr; Prev ]
+          </span>
+        )}
+
+        {nextId ? (
+          <a
+            href={`/words/${nextId}`}
+            class="px-2.5 py-1.5 border border-border-default hover:border-accent-amber bg-surface text-text-muted hover:text-text-bright transition-colors"
+          >
+            [ Next &rarr; ]
+          </a>
+        ) : (
+          <span class="px-2.5 py-1.5 border border-border-dim bg-canvas text-text-dim cursor-not-allowed">
+            [ Next &rarr; ]
+          </span>
+        )}
+      </div>
+    </div>
+
+    <!-- Word Detail Component -->
+    <div class="border border-border-default bg-surface p-6 sm:p-8">
+      <WordDetail word={word} isModal={false} />
+    </div>
+  </div>
+</BaseLayout>
