@@ -31,7 +31,7 @@ const clipSlug = extractTwitchClipSlug(word.twitchClipUrl);
     </div>
 
     <div class="flex items-center gap-2 font-mono text-xs">
-      <a href={`/works/${word.workSlug}`} class="text-accent-amber hover:underline">
+      <a href={`/works/${word.workSlug}`} class="border border-border-green bg-surface-green text-accent-green-bright hover:border-accent-green-bright px-2 py-0.5 transition-colors">
         [ {word.tag} ]
       </a>
       {hasClip && (
@@ -94,7 +94,7 @@ const clipSlug = extractTwitchClipSlug(word.twitchClipUrl);
   )}
 
   <!-- Context Sentence -->
-  <div class="border border-border-default bg-surface-alt p-4">
+  <div class="border border-border-green bg-surface-green/40 p-4">
     <p 
       class="text-base sm:text-lg font-jp text-text-bright leading-relaxed"
       set:html={highlightedSentence}
@@ -107,7 +107,7 @@ const clipSlug = extractTwitchClipSlug(word.twitchClipUrl);
       <ul class="space-y-2 font-mono text-xs sm:text-sm text-text-main">
         {word.definitions.map((def, idx) => (
           <li class="flex items-start gap-2">
-            <span class="text-text-dim shrink-0">[{idx + 1}]</span>
+            <span class="text-accent-green-bright font-semibold shrink-0">[{idx + 1}]</span>
             <span>{def}</span>
           </li>
         ))}

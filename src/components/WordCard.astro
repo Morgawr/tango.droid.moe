@@ -12,7 +12,7 @@ const hasClip = Boolean(word.twitchClipUrl);
 ---
 
 <article
-  class="word-card group border border-border-default hover:border-accent-amber/70 bg-surface hover:bg-surface-alt transition-colors duration-150 flex flex-col cursor-pointer"
+  class="word-card group border border-border-default hover:border-border-green-bright bg-surface hover:bg-surface-alt transition-colors duration-150 flex flex-col cursor-pointer"
   data-id={word.id}
   data-term={word.term}
   data-reading={word.reading}
@@ -22,11 +22,11 @@ const hasClip = Boolean(word.twitchClipUrl);
   data-frequency={word.frequencyRank || 999999}
   data-created={word.createdAt}
 >
-  <a href={`/words/${word.id}`} class="block flex-1 flex flex-col p-4 focus:outline-none focus:ring-1 focus:ring-accent-amber" data-card-link>
+  <a href={`/words/${word.id}`} class="block flex-1 flex flex-col p-4 focus:outline-none focus:ring-1 focus:ring-accent-green" data-card-link>
     <!-- Card Top Header -->
     <div class="flex items-start justify-between gap-3 mb-3">
       <div class="flex flex-col">
-        <h3 class="text-xl sm:text-2xl font-bold font-jp text-text-bright tracking-tight group-hover:text-accent-amber transition-colors">
+        <h3 class="text-xl sm:text-2xl font-bold font-jp text-text-bright tracking-tight group-hover:text-accent-green-bright transition-colors">
           {word.term}
         </h3>
         <span class="text-xs sm:text-sm text-text-muted font-mono tracking-wide">
@@ -81,7 +81,7 @@ const hasClip = Boolean(word.twitchClipUrl);
 
     <!-- Card Footer -->
     <div class="mt-auto pt-2 border-t border-border-dim flex items-center justify-between text-xs font-mono text-text-dim">
-      <span class="text-text-muted truncate max-w-[170px]">
+      <span class="border border-border-green bg-surface-green px-1.5 py-0.5 text-accent-green-bright truncate max-w-[170px]">
         [ {word.tag} ]
       </span>
       <span>{word.dateFormatted}</span>

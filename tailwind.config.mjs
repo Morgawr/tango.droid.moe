@@ -19,6 +19,13 @@ export default {
         'accent-amber-dim': '#8c6f32',
         'accent-rust': '#b35e52',
         'accent-rust-dim': '#7c3f37',
+        'surface-green': '#18221b',
+        'surface-green-alt': '#1f2c23',
+        'border-green': '#2e4233',
+        'border-green-bright': '#44614a',
+        'accent-green': '#6b9370',
+        'accent-green-bright': '#85b08b',
+        'accent-green-dim': '#4a684e',
       },
       fontFamily: {
         mono: ['"IBM Plex Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],

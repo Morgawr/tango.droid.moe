@@ -126,7 +126,7 @@ export function initModal() {
     const definitionsHtml = word.definitions && word.definitions.length > 0
       ? word.definitions.map((def, idx) => `
           <li class="flex items-start gap-2">
-            <span class="text-text-dim shrink-0">[${idx + 1}]</span>
+            <span class="text-accent-green-bright font-semibold shrink-0">[${idx + 1}]</span>
             <span>${escapeHtml(def)}</span>
           </li>
         `).join('')
@@ -146,7 +146,7 @@ export function initModal() {
           </div>
 
           <div class="flex items-center gap-2 font-mono text-xs">
-            <a href="/works/${word.workSlug}" class="text-accent-amber hover:underline">
+            <a href="/works/${word.workSlug}" class="border border-border-green bg-surface-green text-accent-green-bright hover:border-accent-green-bright px-2 py-0.5 transition-colors">
               [ ${escapeHtml(word.tag)} ]
             </a>
             ${hasClip ? '<span class="border border-accent-rust text-accent-rust px-1.5 py-0.5">[ CLIP ]</span>' : ''}
@@ -158,7 +158,7 @@ export function initModal() {
         ${mediaHtml}
 
         <!-- Sentence -->
-        <div class="border border-border-default bg-surface-alt p-4">
+        <div class="border border-border-green bg-surface-green/40 p-4">
           <p class="text-base sm:text-lg font-jp text-text-bright leading-relaxed">
             ${highlightedSentence}
           </p>
@@ -176,13 +176,13 @@ export function initModal() {
           <button 
             type="button" 
             id="modal-copy-link-btn"
-            class="px-2.5 py-1 border border-border-default hover:border-accent-amber bg-surface text-text-muted hover:text-text-bright transition-colors"
+            class="px-2.5 py-1 border border-border-default hover:border-accent-green bg-surface text-text-muted hover:text-accent-green-bright transition-colors"
           >
             [ Copy Link ]
           </button>
           <a 
             href="/words/${word.id}" 
-            class="text-text-muted hover:text-accent-amber hover:underline"
+            class="text-text-muted hover:text-accent-green-bright hover:underline"
           >
             [ Permapage &rarr; ]
           </a>

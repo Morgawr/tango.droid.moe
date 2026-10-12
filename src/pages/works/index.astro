@@ -15,7 +15,7 @@ import works from '../../data/works.json';
       {works.map((entry) => (
         <div class="p-4 flex flex-wrap items-center justify-between gap-3">
           <div class="flex items-center gap-3">
-            <span class="text-base font-bold font-jp text-text-bright">
+            <span class="text-base font-bold font-jp text-accent-green-bright">
               {entry.tag}
             </span>
             {entry.vndbId && (
@@ -23,21 +23,25 @@ import works from '../../data/works.json';
                 href={`https://vndb.org/${entry.vndbId}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-accent-amber hover:underline"
+                class="text-text-muted hover:text-accent-green-bright hover:underline"
               >
                 [ VNDB &nearr; ]
               </a>
             )}
           </div>
 
-          <div class="flex items-center gap-4 text-text-muted">
-            <span>{entry.wordCount} words</span>
+          <div class="flex items-center gap-3 text-text-muted">
+            <span class="border border-border-green bg-surface-green px-1.5 py-0.5 text-accent-green-bright">
+              {entry.wordCount} words
+            </span>
             {entry.clipCount > 0 && (
-              <span class="text-accent-rust">{entry.clipCount} clips</span>
+              <span class="border border-accent-rust/60 text-accent-rust px-1.5 py-0.5 font-bold">
+                {entry.clipCount} clips
+              </span>
             )}
             <a
               href={`/works/${entry.slug}`}
-              class="px-2.5 py-1 border border-border-default hover:border-accent-amber bg-surface hover:bg-surface-alt text-text-bright transition-colors"
+              class="px-2.5 py-1 border border-border-default hover:border-accent-green bg-surface hover:bg-surface-alt text-text-bright hover:text-accent-green-bright transition-colors"
             >
               [ View &rarr; ]
             </a>

@@ -8,7 +8,7 @@ const { currentNav = 'words' } = Astro.props;
 
 <header class="border-b border-border-default bg-surface select-none">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
-    <a href="/" class="font-mono text-xl sm:text-2xl font-bold tracking-tight text-text-bright hover:text-accent-amber transition-colors">
+    <a href="/" class="font-mono text-xl sm:text-2xl font-bold tracking-tight text-text-bright hover:text-accent-green-bright transition-colors">
       tango.droid.moe
     </a>
 
@@ -17,8 +17,8 @@ const { currentNav = 'words' } = Astro.props;
         href="/" 
         class={`px-3 py-1.5 border transition-colors ${
           currentNav === 'words' 
-            ? 'border-accent-amber bg-surface-alt text-accent-amber font-semibold' 
-            : 'border-border-default bg-surface text-text-muted hover:text-text-bright hover:border-border-focus'
+            ? 'border-accent-green bg-surface-green text-accent-green-bright font-semibold' 
+            : 'border-border-default bg-surface text-text-muted hover:text-text-bright hover:border-border-green'
         }`}
       >
         [ Words ]
@@ -27,8 +27,8 @@ const { currentNav = 'words' } = Astro.props;
         href="/works" 
         class={`px-3 py-1.5 border transition-colors ${
           currentNav === 'works' 
-            ? 'border-accent-amber bg-surface-alt text-accent-amber font-semibold' 
-            : 'border-border-default bg-surface text-text-muted hover:text-text-bright hover:border-border-focus'
+            ? 'border-accent-green bg-surface-green text-accent-green-bright font-semibold' 
+            : 'border-border-default bg-surface text-text-muted hover:text-text-bright hover:border-border-green'
         }`}
       >
         [ Works ]

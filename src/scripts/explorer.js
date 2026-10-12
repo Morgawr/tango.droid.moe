@@ -42,10 +42,10 @@ export function initExplorer() {
     workFilterBtns.forEach((btn) => {
       const workSlug = btn.getAttribute('data-filter-work');
       if (workSlug === currentWork) {
-        btn.classList.add('border-accent-amber', 'bg-surface-alt', 'text-accent-amber', 'font-semibold');
+        btn.classList.add('border-accent-green', 'bg-surface-green', 'text-accent-green-bright', 'font-semibold');
         btn.classList.remove('border-border-default', 'bg-surface', 'text-text-muted');
       } else {
-        btn.classList.remove('border-accent-amber', 'bg-surface-alt', 'text-accent-amber', 'font-semibold');
+        btn.classList.remove('border-accent-green', 'bg-surface-green', 'text-accent-green-bright', 'font-semibold');
         btn.classList.add('border-border-default', 'bg-surface', 'text-text-muted');
       }
     });

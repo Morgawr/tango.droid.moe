@@ -17,11 +17,14 @@ const totalClips = (words as WordItem[]).filter((w) => Boolean(w.twitchClipUrl))
       <!-- Search & Sort Row -->
       <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3">
         <div class="relative flex-1">
+          <div class="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none text-accent-green font-bold">
+            &gt;
+          </div>
           <input
             type="text"
             id="search-input"
             placeholder="Search vocabulary, reading, sentence, or definition..."
-            class="w-full px-3 py-1.5 bg-canvas border border-border-default focus:border-accent-amber focus:outline-none text-text-bright font-mono text-xs placeholder-text-dim"
+            class="w-full pl-7 pr-8 py-1.5 bg-canvas border border-border-default focus:border-accent-green focus:bg-surface-green/20 focus:outline-none text-text-bright font-mono text-xs placeholder-text-dim transition-colors"
             autocomplete="off"
             spellcheck="false"
           />
@@ -39,7 +42,7 @@ const totalClips = (words as WordItem[]).filter((w) => Boolean(w.twitchClipUrl))
           <label for="sort-select" class="shrink-0">[ Sort: ]</label>
           <select
             id="sort-select"
-            class="bg-canvas border border-border-default px-2 py-1.5 text-text-bright focus:border-accent-amber focus:outline-none font-mono text-xs cursor-pointer"
+            class="bg-canvas border border-border-default px-2 py-1.5 text-text-bright focus:border-accent-green focus:outline-none font-mono text-xs cursor-pointer"
           >
             <option value="newest">Newest</option>
             <option value="oldest">Oldest</option>
@@ -56,7 +59,7 @@ const totalClips = (words as WordItem[]).filter((w) => Boolean(w.twitchClipUrl))
           <button
             type="button"
             data-filter-work="all"
-            class="px-2 py-1 border border-accent-amber bg-surface-alt text-accent-amber font-semibold transition-colors"
+            class="px-2 py-1 border border-accent-green bg-surface-green text-accent-green-bright font-semibold transition-colors"
           >
             [ All ({totalWords}) ]
           </button>
@@ -64,7 +67,7 @@ const totalClips = (words as WordItem[]).filter((w) => Boolean(w.twitchClipUrl))
             <button
               type="button"
               data-filter-work={entry.slug}
-              class="px-2 py-1 border border-border-default bg-surface text-text-muted hover:border-border-focus hover:text-text-bright transition-colors"
+              class="px-2 py-1 border border-border-default bg-surface text-text-muted hover:border-border-green hover:text-text-bright transition-colors"
             >
               [ {entry.tag} ({entry.wordCount}) ]
             </button>

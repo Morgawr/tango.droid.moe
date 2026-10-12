@@ -27,7 +27,7 @@ const workWords = (words as WordItem[]).filter(
   <div class="space-y-4">
     <!-- Header -->
     <div class="flex items-center justify-between gap-4 font-mono text-xs">
-      <a href="/works" class="px-2.5 py-1 border border-border-default hover:border-accent-amber bg-surface hover:bg-surface-alt text-text-muted hover:text-accent-amber transition-colors">
+      <a href="/works" class="px-2.5 py-1 border border-border-default hover:border-accent-green bg-surface hover:bg-surface-alt text-text-muted hover:text-accent-green-bright transition-colors">
         [ &larr; Works ]
       </a>
 
@@ -36,7 +36,7 @@ const workWords = (words as WordItem[]).filter(
           href={`https://vndb.org/${entry.vndbId}`}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-accent-amber hover:underline"
+          class="text-text-muted hover:text-accent-green-bright hover:underline"
         >
           [ VNDB &nearr; ]
         </a>
@@ -44,10 +44,10 @@ const workWords = (words as WordItem[]).filter(
     </div>
 
     <div class="border-b border-border-default pb-3 flex items-baseline justify-between gap-4">
-      <h1 class="text-2xl sm:text-3xl font-bold font-jp text-text-bright">
+      <h1 class="text-2xl sm:text-3xl font-bold font-jp text-accent-green-bright">
         {entry.tag}
       </h1>
-      <span class="font-mono text-xs text-text-dim">
+      <span class="font-mono text-xs border border-border-green bg-surface-green px-1.5 py-0.5 text-accent-green-bright">
         {workWords.length} words
       </span>
     </div>
