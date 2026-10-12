@@ -124,22 +124,17 @@ for row in rows:
     # Resolve work metadata
     work_meta = known_works.get(tag, {
         "slug": tag,
-        "title": tag,
         "vndbId": None,
-        "vndbRating": None,
-        "developer": None,
-        "releaseYear": None,
-        "description": ""
     })
 
     # Track stats
     if tag not in stats_by_work:
         stats_by_work[tag] = {
             "tag": tag,
-            "work": work_meta,
+            "slug": work_meta.get("slug", tag),
+            "vndbId": work_meta.get("vndbId"),
             "wordCount": 0,
             "clipCount": 0,
-            "lastMined": date_formatted
         }
     stats_by_work[tag]["wordCount"] += 1
     if clip_url:
@@ -159,8 +154,7 @@ for row in rows:
         "sentence": sentence,
         "wordRange": [word_start, word_end],
         "tag": tag,
-        "workSlug": work_meta["slug"],
-        "workTitle": work_meta["title"],
+        "workSlug": work_meta.get("slug", tag),
         "hasScreenshot": bool(screen_rel_path),
         "screenshotUrl": screen_rel_path,
         "thumbnailUrl": thumb_rel_path,

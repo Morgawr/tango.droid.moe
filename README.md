@@ -14,7 +14,7 @@ Hosted at [tango.droid.moe](https://tango.droid.moe).
 - **Visual Capture**: In-game screenshots compressed to lightweight WebP files.
 - **Twitch Stream Clips**: Synchronized Twitch clips captured at the exact moment of mining.
 - **Dictionary Definitions**: English definitions and glosses.
-- **VNDB Metadata**: Source visual novel catalog links, release years, and developer metadata.
+- **Source Links**: Links to VNDB entries for source visual novels.
 
 ## Aesthetic Guidelines (PC-98 Retro Terminal)
 

@@ -10,52 +10,18 @@ const totalWords = words.length;
 const totalClips = (words as WordItem[]).filter((w) => Boolean(w.twitchClipUrl)).length;
 ---
 
-<BaseLayout
-  title="tango.droid.moe — Vocabulary Vault"
-  description="Browsable visual Japanese vocabulary archive and dialogue sentences mined from visual novels."
-  currentNav="words"
->
-  <div class="space-y-6">
-    <!-- Hero / System Banner -->
-    <div class="border border-border-default bg-surface p-4 sm:p-6">
-      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-border-dim pb-3 mb-3 text-xs font-mono">
-        <span class="text-accent-amber font-semibold">[ TERMINAL // VAULT EXPLORER ]</span>
-        <span class="text-text-dim">DATABASE ENGINE: SQLITE / SSG</span>
-      </div>
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
-        <div>
-          <h1 class="text-2xl sm:text-3xl font-bold font-mono text-text-bright tracking-tight">
-            Mined Vocabulary Archive
-          </h1>
-          <p class="text-xs sm:text-sm font-mono text-text-muted mt-1 max-w-2xl">
-            Browsable index of words mined during visual novel reading sessions, complete with dialogue sentences, dictionary definitions, in-game screenshots, and stream clips.
-          </p>
-        </div>
-        <div class="flex items-center gap-3 text-xs font-mono text-text-dim shrink-0">
-          <span class="border border-border-dim bg-surface-alt px-2.5 py-1">
-            TOTAL: <strong class="text-text-bright">{totalWords}</strong>
-          </span>
-          <span class="border border-border-dim bg-surface-alt px-2.5 py-1">
-            CLIPS: <strong class="text-accent-rust">{totalClips}</strong>
-          </span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Filter & Control Panel -->
-    <div class="border border-border-default bg-surface p-4 space-y-4">
+<BaseLayout title="tango.droid.moe" currentNav="words">
+  <div class="space-y-4">
+    <!-- Search & Filter Controls -->
+    <div class="border border-border-default bg-surface p-3 sm:p-4 space-y-3 font-mono text-xs">
       <!-- Search & Sort Row -->
-      <div class="flex flex-col md:flex-row items-stretch md:items-center gap-3">
-        <!-- Search Input -->
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3">
         <div class="relative flex-1">
-          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none font-mono text-accent-amber text-sm">
-            &gt;
-          </div>
           <input
             type="text"
             id="search-input"
-            placeholder="Search vocabulary, reading, sentence, or English definition..."
-            class="w-full pl-8 pr-10 py-2 bg-canvas border border-border-default focus:border-accent-amber focus:outline-none text-text-bright font-mono text-xs sm:text-sm placeholder-text-dim"
+            placeholder="Search vocabulary, reading, sentence, or definition..."
+            class="w-full px-3 py-1.5 bg-canvas border border-border-default focus:border-accent-amber focus:outline-none text-text-bright font-mono text-xs placeholder-text-dim"
             autocomplete="off"
             spellcheck="false"
           />
@@ -69,109 +35,92 @@ const totalClips = (words as WordItem[]).filter((w) => Boolean(w.twitchClipUrl))
           </button>
         </div>
 
-        <!-- Sort Dropdown -->
-        <div class="flex items-center gap-2 shrink-0 font-mono text-xs text-text-dim">
+        <div class="flex items-center gap-2 shrink-0 text-text-dim">
           <label for="sort-select" class="shrink-0">[ Sort: ]</label>
           <select
             id="sort-select"
-            class="bg-canvas border border-border-default px-3 py-2 text-text-bright focus:border-accent-amber focus:outline-none font-mono text-xs cursor-pointer"
+            class="bg-canvas border border-border-default px-2 py-1.5 text-text-bright focus:border-accent-amber focus:outline-none font-mono text-xs cursor-pointer"
           >
-            <option value="newest">Newest First</option>
-            <option value="oldest">Oldest First</option>
-            <option value="freq-asc">Most Common (Rank &uarr;)</option>
-            <option value="freq-desc">Rarest (Rank &darr;)</option>
-            <option value="term">Term (Kanji/Kana)</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="freq-asc">Most Common</option>
+            <option value="freq-desc">Rarest</option>
+            <option value="term">Term</option>
           </select>
         </div>
       </div>
 
-      <!-- Work Filters & Clip Toggle Row -->
-      <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-border-dim text-xs font-mono">
-        <!-- Work filter buttons -->
+      <!-- Filters & Counter Row -->
+      <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-border-dim">
         <div class="flex flex-wrap items-center gap-1.5">
-          <span class="text-text-dim mr-1">[ Work: ]</span>
           <button
             type="button"
             data-filter-work="all"
-            class="px-2.5 py-1 border border-accent-amber bg-surface-alt text-accent-amber font-semibold transition-colors"
+            class="px-2 py-1 border border-accent-amber bg-surface-alt text-accent-amber font-semibold transition-colors"
           >
-            All ({totalWords})
+            [ All ({totalWords}) ]
           </button>
           {works.map((entry) => (
             <button
               type="button"
-              data-filter-work={entry.work.slug}
-              class="px-2.5 py-1 border border-border-default bg-surface text-text-muted hover:border-border-focus hover:text-text-bright transition-colors"
+              data-filter-work={entry.slug}
+              class="px-2 py-1 border border-border-default bg-surface text-text-muted hover:border-border-focus hover:text-text-bright transition-colors"
             >
-              {entry.work.title} ({entry.wordCount})
+              [ {entry.tag} ({entry.wordCount}) ]
             </button>
           ))}
-        </div>
-
-        <!-- Quick Toggles -->
-        <div class="flex items-center gap-2">
           <button
             type="button"
             id="filter-clip-btn"
-            class="px-2.5 py-1 border border-border-default bg-surface text-text-muted hover:border-border-focus hover:text-text-bright transition-colors"
+            class="px-2 py-1 border border-border-default bg-surface text-text-muted hover:border-border-focus hover:text-text-bright transition-colors"
           >
             [ Clips Only ({totalClips}) ]
           </button>
         </div>
-      </div>
 
-      <!-- Live Counter & Active State Bar -->
-      <div class="flex items-center justify-between pt-2 border-t border-border-dim text-xs font-mono text-text-dim">
-        <span id="filter-counter">
-          SHOWING {totalWords} OF {totalWords} ENTRIES
-        </span>
-        <button
-          type="button"
-          id="reset-filters-btn"
-          class="hover:text-accent-amber transition-colors"
-        >
-          [ Reset Filters ]
-        </button>
+        <div class="flex items-center gap-3 text-text-dim">
+          <span id="filter-counter">
+            {totalWords} / {totalWords}
+          </span>
+          <button
+            type="button"
+            id="reset-filters-btn"
+            class="hover:text-accent-amber transition-colors"
+          >
+            [ Reset ]
+          </button>
+        </div>
       </div>
     </div>
 
     <!-- Cards Grid -->
     <div
       id="words-grid"
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
     >
       {(words as WordItem[]).map((word) => (
         <WordCard word={word} />
       ))}
     </div>
 
-    <!-- Empty Results Placeholder -->
+    <!-- Empty Results -->
     <div
       id="empty-results-state"
-      class="hidden border border-border-default bg-surface p-12 text-center space-y-4"
+      class="hidden border border-border-default bg-surface p-8 text-center space-y-3 font-mono text-xs"
     >
-      <div class="text-accent-rust font-mono text-sm font-semibold">
-        [ NO MATCHING VOCABULARY FOUND ]
-      </div>
-      <p class="text-xs sm:text-sm font-mono text-text-muted max-w-md mx-auto">
-        No vocabulary entries match your active query or selected work filter.
-      </p>
-      <div>
-        <button
-          type="button"
-          onclick="document.getElementById('reset-filters-btn')?.click()"
-          class="px-4 py-2 border border-accent-amber text-accent-amber hover:bg-accent-amber hover:text-canvas font-mono text-xs transition-colors"
-        >
-          [ Clear All Filters ]
-        </button>
-      </div>
+      <div class="text-text-muted">No matching vocabulary found.</div>
+      <button
+        type="button"
+        onclick="document.getElementById('reset-filters-btn')?.click()"
+        class="px-3 py-1.5 border border-accent-amber text-accent-amber hover:bg-accent-amber hover:text-canvas transition-colors"
+      >
+        [ Clear Filters ]
+      </button>
     </div>
   </div>
 
-  <!-- Detail Modal Component -->
   <WordModal />
 
-  <!-- Data payload & Client Scripts -->
   <script id="all-words-data" type="application/json" set:html={JSON.stringify(words)} />
   <script src="../scripts/explorer.js"></script>
   <script src="../scripts/modal.js"></script>

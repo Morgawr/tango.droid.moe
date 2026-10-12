@@ -3,70 +3,46 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import works from '../../data/works.json';
 ---
 
-<BaseLayout
-  title="Works Catalog — tango.droid.moe"
-  description="Visual novels and source works cataloged in the vocabulary bank."
-  currentNav="works"
->
-  <div class="space-y-6">
-    <!-- Header banner -->
-    <div class="border-b border-border-default pb-4">
-      <div class="text-xs font-mono text-accent-amber mb-1">// SOURCE ARCHIVE CATALOG</div>
-      <h1 class="text-2xl sm:text-3xl font-bold font-mono text-text-bright tracking-tight">
-        Visual Novels & Sources
+<BaseLayout title="Works — tango.droid.moe" currentNav="works">
+  <div class="space-y-4">
+    <div class="border-b border-border-default pb-3">
+      <h1 class="text-xl font-bold font-mono text-text-bright">
+        Works
       </h1>
-      <p class="text-sm font-mono text-text-muted mt-1">
-        Index of all visual novels, games, and media sources from which vocabulary has been mined.
-      </p>
     </div>
 
-    <!-- Works Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="border border-border-default bg-surface divide-y divide-border-dim font-mono text-xs">
       {works.map((entry) => (
-        <article class="border border-border-default hover:border-accent-amber bg-surface p-6 flex flex-col justify-between transition-colors">
-          <div>
-            <div class="flex items-start justify-between gap-4 mb-3">
-              <div>
-                <h2 class="text-xl sm:text-2xl font-bold text-text-bright font-jp">
-                  {entry.work.title}
-                </h2>
-              </div>
-
-              {entry.work.vndbId && (
-                <a
-                  href={`https://vndb.org/${entry.work.vndbId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="font-mono text-xs border border-border-default hover:border-accent-amber bg-surface-alt px-2 py-1 text-accent-amber shrink-0 transition-colors"
-                >
-                  [ VNDB: {entry.work.vndbId} &nearr; ]
-                </a>
-              )}
-            </div>
-
-            <!-- Metadata table / list -->
-            <div class="grid grid-cols-2 gap-2 text-xs font-mono text-text-dim border-y border-border-dim py-3 my-4">
-              <div>DEVELOPER: <span class="text-text-main">{entry.work.developer || 'Unknown'}</span></div>
-              <div>YEAR: <span class="text-text-main">{entry.work.releaseYear || 'Unknown'}</span></div>
-              <div>MINED WORDS: <span class="text-accent-amber font-bold">{entry.wordCount}</span></div>
-              <div>TWITCH CLIPS: <span class={entry.clipCount > 0 ? 'text-accent-rust font-bold' : 'text-text-dim'}>{entry.clipCount}</span></div>
-            </div>
-
-            <p class="text-xs sm:text-sm text-text-muted font-mono leading-relaxed mb-6">
-              {entry.work.description}
-            </p>
+        <div class="p-4 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <span class="text-base font-bold font-jp text-text-bright">
+              {entry.tag}
+            </span>
+            {entry.vndbId && (
+              <a
+                href={`https://vndb.org/${entry.vndbId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-accent-amber hover:underline"
+              >
+                [ VNDB &nearr; ]
+              </a>
+            )}
           </div>
 
-          <div class="flex items-center justify-between gap-3 pt-3 border-t border-border-dim font-mono text-xs">
-            <span class="text-text-dim">LAST MINED: {entry.lastMined}</span>
+          <div class="flex items-center gap-4 text-text-muted">
+            <span>{entry.wordCount} words</span>
+            {entry.clipCount > 0 && (
+              <span class="text-accent-rust">{entry.clipCount} clips</span>
+            )}
             <a
-              href={`/works/${entry.work.slug}`}
-              class="px-3 py-1.5 border border-accent-amber text-accent-amber hover:bg-accent-amber hover:text-canvas transition-colors font-semibold"
+              href={`/works/${entry.slug}`}
+              class="px-2.5 py-1 border border-border-default hover:border-accent-amber bg-surface hover:bg-surface-alt text-text-bright transition-colors"
             >
-              [ Browse {entry.wordCount} Words &rarr; ]
+              [ View &rarr; ]
             </a>
           </div>
-        </article>
+        </div>
       ))}
     </div>
   </div>

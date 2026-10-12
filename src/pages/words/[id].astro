@@ -29,7 +29,7 @@ interface Props {
 const { word, prevId, nextId } = Astro.props;
 
 const pageTitle = `${word.term} (${word.reading}) — tango.droid.moe`;
-const pageDescription = `Mined vocabulary entry from ${word.workTitle}: "${word.sentence}"`;
+const pageDescription = `${word.term} (${word.reading}) — ${word.tag}`;
 ---
 
 <BaseLayout 
@@ -39,13 +39,13 @@ const pageDescription = `Mined vocabulary entry from ${word.workTitle}: "${word.
   currentNav="words"
 >
   <div class="max-w-4xl mx-auto">
-    <!-- Top Action Breadcrumb -->
-    <div class="flex items-center justify-between gap-4 mb-6 font-mono text-xs select-none">
+    <!-- Navigation -->
+    <div class="flex items-center justify-between gap-4 mb-4 font-mono text-xs select-none">
       <a 
         href="/" 
-        class="inline-flex items-center gap-1.5 px-3 py-1.5 border border-border-default hover:border-accent-amber bg-surface hover:bg-surface-alt text-text-muted hover:text-accent-amber transition-colors"
+        class="px-2.5 py-1 border border-border-default hover:border-accent-amber bg-surface hover:bg-surface-alt text-text-muted hover:text-accent-amber transition-colors"
       >
-        [ &larr; Return to Explorer ]
+        [ &larr; Words ]
       </a>
 
       <!-- Prev / Next Navigation -->

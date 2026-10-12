@@ -17,7 +17,7 @@ const hasClip = Boolean(word.twitchClipUrl);
   data-term={word.term}
   data-reading={word.reading}
   data-work-slug={word.workSlug}
-  data-work-title={word.workTitle}
+  data-work-tag={word.tag}
   data-has-clip={hasClip ? 'true' : 'false'}
   data-frequency={word.frequencyRank || 999999}
   data-created={word.createdAt}
@@ -82,7 +82,7 @@ const hasClip = Boolean(word.twitchClipUrl);
     <!-- Card Footer -->
     <div class="mt-auto pt-2 border-t border-border-dim flex items-center justify-between text-xs font-mono text-text-dim">
       <span class="text-text-muted truncate max-w-[170px]">
-        [ {word.workTitle || word.tag} ]
+        [ {word.tag} ]
       </span>
       <span>{word.dateFormatted}</span>
     </div>

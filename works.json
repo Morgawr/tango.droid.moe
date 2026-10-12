@@ -1,20 +1,10 @@
 {
-  "インタールード": {
-    "slug": "v3195",
-    "title": "インタールード",
-    "vndbId": "v3195",
-    "vndbRating": 7.25,
-    "developer": "Longshot",
-    "releaseYear": 2003,
-    "description": "A psychological mystery visual novel featuring dynamic parallax scenes and a branching timeline following an ordinary student whose everyday world begins unraveling after encounter with a mysterious girl."
-  },
   "二重影": {
     "slug": "v3856",
-    "title": "二重影",
-    "vndbId": "v3856",
-    "vndbRating": 7.59,
-    "developer": "KeroQ",
-    "releaseYear": 2000,
-    "description": "A dark historical fantasy visual novel set in the 17th year of Kan'ei (1640), following a cursed samurai with two shadows who travels to an isolated island steeped in twin sacrificial rituals."
+    "vndbId": "v3856"
+  },
+  "インタールード": {
+    "slug": "v3195",
+    "vndbId": "v3195"
   }
 }

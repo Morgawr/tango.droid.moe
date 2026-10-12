@@ -53,7 +53,7 @@ export function initModal() {
       wordMap.set(w.id, { word: w, index: idx });
     });
   } catch (err) {
-    console.error('Failed to parse words data for modal:', err);
+    console.error('Failed to parse words data:', err);
     return;
   }
 
@@ -64,7 +64,6 @@ export function initModal() {
 
   if (!modalEl) return;
 
-  // Update visible word IDs (filtered cards currently in DOM)
   function updateVisibleWordIds() {
     const visibleCards = document.querySelectorAll('.word-card:not([style*="display: none"])');
     if (visibleCards.length > 0) {
@@ -83,8 +82,8 @@ export function initModal() {
 
     if (!content) return;
 
-    if (titleEntry) titleEntry.textContent = `ENTRY #${word.id}`;
-    if (titleWork) titleWork.textContent = word.workTitle || word.tag;
+    if (titleEntry) titleEntry.textContent = `Entry #${word.id}`;
+    if (titleWork) titleWork.textContent = word.tag;
 
     updateVisibleWordIds();
     const visibleIdx = visibleWordIds.indexOf(word.id);
@@ -98,162 +97,99 @@ export function initModal() {
 
     const mediaHtml = hasClip
       ? `
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div class="flex flex-col border border-border-default bg-surface">
-            <div class="px-3 py-1.5 bg-surface-alt border-b border-border-default text-xs font-mono text-text-muted flex justify-between">
-              <span>[ IN-GAME SCREENSHOT ]</span>
-              <span>100% CAPTURE</span>
-            </div>
-            <div class="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
-              ${word.screenshotUrl ? `<img src="${word.screenshotUrl}" alt="${word.term}" class="w-full h-full object-contain" />` : '<span class="text-text-dim font-mono text-xs">[ NO SCREENSHOT ]</span>'}
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="aspect-video bg-black border border-border-default flex items-center justify-center overflow-hidden">
+            ${word.screenshotUrl ? `<img src="${word.screenshotUrl}" alt="${word.term}" class="w-full h-full object-contain" />` : '<span class="text-text-dim font-mono text-xs">[ No Image ]</span>'}
           </div>
-          <div class="flex flex-col border border-border-default bg-surface">
-            <div class="px-3 py-1.5 bg-surface-alt border-b border-border-default text-xs font-mono text-text-muted flex justify-between items-center">
-              <span class="text-accent-rust font-semibold">[ TWITCH STREAM CLIP ]</span>
-              <a href="${word.twitchClipUrl}" target="_blank" rel="noopener noreferrer" class="text-accent-amber hover:underline flex items-center gap-1 font-mono text-xs">
-                [ Open Clip &nearr; ]
+          <div class="aspect-video bg-black border border-border-default flex items-center justify-center">
+            ${clipSlug ? `
+              <iframe
+                src="https://clips.twitch.tv/embed?clip=${clipSlug}&parent=${hostname}&autoplay=false"
+                class="w-full h-full border-0"
+                allowfullscreen
+                title="Twitch Clip"
+              ></iframe>
+            ` : `
+              <a href="${word.twitchClipUrl}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 border border-accent-rust text-accent-rust font-mono text-xs hover:bg-accent-rust hover:text-canvas">
+                [ Watch Clip &nearr; ]
               </a>
-            </div>
-            <div class="relative aspect-video bg-black flex items-center justify-center">
-              ${clipSlug ? `
-                <iframe
-                  src="https://clips.twitch.tv/embed?clip=${clipSlug}&parent=${hostname}&autoplay=false"
-                  class="w-full h-full border-0"
-                  allowfullscreen
-                  title="Twitch Clip"
-                ></iframe>
-              ` : `
-                <a href="${word.twitchClipUrl}" target="_blank" rel="noopener noreferrer" class="px-3 py-2 border border-accent-rust text-accent-rust font-mono text-xs hover:bg-accent-rust hover:text-canvas">
-                  [ Watch Clip on Twitch &nearr; ]
-                </a>
-              `}
-            </div>
+            `}
           </div>
         </div>
       `
       : `
-        <div class="border border-border-default bg-surface">
-          <div class="px-3 py-1.5 bg-surface-alt border-b border-border-default text-xs font-mono text-text-muted flex justify-between">
-            <span>[ IN-GAME SCREENSHOT ]</span>
-            <span>FULL HERO WIDTH</span>
-          </div>
-          <div class="relative w-full aspect-video max-h-[500px] bg-black flex items-center justify-center overflow-hidden">
-            ${word.screenshotUrl ? `<img src="${word.screenshotUrl}" alt="${word.term}" class="w-full h-full object-contain" />` : '<span class="text-text-dim font-mono text-xs">[ NO SCREENSHOT ]</span>'}
-          </div>
+        <div class="w-full aspect-video max-h-[480px] bg-black border border-border-default flex items-center justify-center overflow-hidden">
+          ${word.screenshotUrl ? `<img src="${word.screenshotUrl}" alt="${word.term}" class="w-full h-full object-contain" />` : '<span class="text-text-dim font-mono text-xs">[ No Image ]</span>'}
         </div>
       `;
 
     const definitionsHtml = word.definitions && word.definitions.length > 0
       ? word.definitions.map((def, idx) => `
-          <li class="flex items-start gap-3">
-            <span class="text-accent-amber font-semibold shrink-0">[${idx + 1}]</span>
+          <li class="flex items-start gap-2">
+            <span class="text-text-dim shrink-0">[${idx + 1}]</span>
             <span>${escapeHtml(def)}</span>
           </li>
         `).join('')
-      : `<li class="text-text-muted">${escapeHtml(word.definitionText || 'No definitions available.')}</li>`;
-
-    const pitchAccentHtml = word.pitchAccent
-      ? `
-        <div class="mt-2 text-xs font-mono text-accent-amber flex items-center gap-2">
-          <span class="text-text-dim">PITCH ACCENT:</span>
-          <span>${escapeHtml(word.pitchAccent.pattern || `Pattern [${word.pitchAccent.downstep}]`)}</span>
-        </div>
-      `
-      : '';
+      : `<li class="text-text-muted">${escapeHtml(word.definitionText || 'No definition available.')}</li>`;
 
     content.innerHTML = `
-      <div class="flex flex-col gap-6">
-        <!-- Word Header -->
-        <div class="border-b border-border-default pb-4 flex flex-wrap items-start justify-between gap-4">
-          <div>
-            <div class="flex items-baseline gap-4 flex-wrap">
-              <h2 class="text-3xl sm:text-5xl font-bold font-jp text-text-bright tracking-tight">
-                ${word.term}
-              </h2>
-              <span class="text-lg sm:text-2xl text-text-muted font-mono">
-                ${word.reading}
-              </span>
-            </div>
-            ${pitchAccentHtml}
+      <div class="flex flex-col gap-5">
+        <!-- Header -->
+        <div class="border-b border-border-default pb-3 flex flex-wrap items-baseline justify-between gap-3">
+          <div class="flex items-baseline gap-3 flex-wrap">
+            <h2 class="text-3xl sm:text-4xl font-bold font-jp text-text-bright">
+              ${word.term}
+            </h2>
+            <span class="text-lg sm:text-xl text-text-muted font-mono">
+              ${word.reading}
+            </span>
           </div>
 
-          <div class="flex flex-col items-start sm:items-end gap-1.5 font-mono text-xs text-text-dim">
-            <div class="flex items-center gap-2">
-              <span class="text-text-bright font-bold">[ ENTRY #${word.id} ]</span>
-              ${hasClip ? '<span class="border border-accent-rust/70 bg-canvas text-accent-rust px-2 py-0.5 font-bold">[ CLIP ]</span>' : ''}
-            </div>
-            <div class="flex items-center gap-2 text-text-muted">
-              <span>Work:</span>
-              <a href="/works/${word.workSlug}" class="text-accent-amber hover:underline">
-                [ ${escapeHtml(word.workTitle || word.tag)} ]
-              </a>
-            </div>
-            <div class="flex items-center gap-3">
-              ${word.frequencyRank ? `<span>Freq: <strong class="text-text-main">#${word.frequencyRank}</strong></span>` : ''}
-              <span>Date: <strong class="text-text-main">${word.dateFormatted}</strong></span>
-            </div>
+          <div class="flex items-center gap-2 font-mono text-xs">
+            <a href="/works/${word.workSlug}" class="text-accent-amber hover:underline">
+              [ ${escapeHtml(word.tag)} ]
+            </a>
+            ${hasClip ? '<span class="border border-accent-rust text-accent-rust px-1.5 py-0.5">[ CLIP ]</span>' : ''}
+            ${word.frequencyRank ? `<span class="text-text-dim">#${word.frequencyRank}</span>` : ''}
           </div>
         </div>
 
-        <!-- Media Section -->
-        <section>
-          <div class="text-xs font-mono text-text-dim mb-2 flex items-center justify-between">
-            <span>// SOURCE MEDIA</span>
-            ${hasClip ? '<span>[ DUAL MEDIA MODE ]</span>' : ''}
-          </div>
-          ${mediaHtml}
-        </section>
+        <!-- Media -->
+        ${mediaHtml}
 
-        <!-- Sentence Section -->
-        <section>
-          <div class="text-xs font-mono text-text-dim mb-2">
-            // CONTEXT SENTENCE (${escapeHtml(word.workTitle || word.tag)})
-          </div>
-          <div class="border border-border-default bg-surface-alt p-4 sm:p-5">
-            <blockquote class="text-lg sm:text-xl font-jp text-text-bright leading-relaxed">
-              ${highlightedSentence}
-            </blockquote>
-          </div>
-        </section>
+        <!-- Sentence -->
+        <div class="border border-border-default bg-surface-alt p-4">
+          <p class="text-base sm:text-lg font-jp text-text-bright leading-relaxed">
+            ${highlightedSentence}
+          </p>
+        </div>
 
-        <!-- Definitions Section -->
-        <section>
-          <div class="text-xs font-mono text-text-dim mb-2">
-            // DEFINITIONS & GLOSSES
-          </div>
-          <div class="border border-border-default bg-surface-alt p-4 sm:p-5">
-            <ul class="space-y-3 font-mono text-sm sm:text-base text-text-main">
-              ${definitionsHtml}
-            </ul>
-          </div>
-        </section>
+        <!-- Definitions -->
+        <div class="border border-border-default bg-surface-alt p-4">
+          <ul class="space-y-2 font-mono text-xs sm:text-sm text-text-main">
+            ${definitionsHtml}
+          </ul>
+        </div>
 
-        <!-- Action bar -->
-        <div class="border-t border-border-default pt-4 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
-          <div class="flex items-center gap-2">
-            <button 
-              type="button" 
-              id="modal-copy-link-btn"
-              class="px-3 py-1.5 border border-border-default hover:border-accent-amber bg-surface text-text-main hover:bg-surface-alt transition-colors"
-            >
-              [ Copy Direct Link ]
-            </button>
-            <a 
-              href="/words/${word.id}" 
-              class="px-3 py-1.5 border border-border-default hover:border-accent-amber bg-surface text-text-muted hover:text-text-bright transition-colors"
-            >
-              [ Standalone Page &rarr; ]
-            </a>
-          </div>
-          <div class="text-text-dim">
-            <span>KIND: <span class="text-text-bright">${(word.kind || 'vocab').toUpperCase()}</span></span>
-          </div>
+        <!-- Actions -->
+        <div class="pt-2 flex items-center justify-between font-mono text-xs">
+          <button 
+            type="button" 
+            id="modal-copy-link-btn"
+            class="px-2.5 py-1 border border-border-default hover:border-accent-amber bg-surface text-text-muted hover:text-text-bright transition-colors"
+          >
+            [ Copy Link ]
+          </button>
+          <a 
+            href="/words/${word.id}" 
+            class="text-text-muted hover:text-accent-amber hover:underline"
+          >
+            [ Permapage &rarr; ]
+          </a>
         </div>
       </div>
     `;
 
-    // Hook up copy button
     const copyBtn = document.getElementById('modal-copy-link-btn');
     if (copyBtn) {
       copyBtn.onclick = async () => {
@@ -261,8 +197,8 @@ export function initModal() {
         try {
           await navigator.clipboard.writeText(link);
           const orig = copyBtn.textContent;
-          copyBtn.textContent = '[ Copied! ]';
-          setTimeout(() => { copyBtn.textContent = orig; }, 2000);
+          copyBtn.textContent = '[ Copied ]';
+          setTimeout(() => { copyBtn.textContent = orig; }, 1500);
         } catch {
           prompt('Copy link:', link);
         }
@@ -317,7 +253,6 @@ export function initModal() {
     openModal(nextId, true);
   }
 
-  // Card click delegation
   document.addEventListener('click', (e) => {
     const cardLink = e.target.closest('[data-card-link]');
     if (cardLink && !e.ctrlKey && !e.metaKey && !e.shiftKey) {
@@ -330,7 +265,6 @@ export function initModal() {
     }
   });
 
-  // Modal close handlers
   if (closeBtn) closeBtn.onclick = () => closeModal();
   modalEl.onclick = (e) => {
     if (e.target === modalEl) closeModal();
@@ -339,7 +273,6 @@ export function initModal() {
   if (prevBtn) prevBtn.onclick = () => navigateModal(-1);
   if (nextBtn) nextBtn.onclick = () => navigateModal(1);
 
-  // Keyboard controls
   window.addEventListener('keydown', (e) => {
     if (modalEl.classList.contains('hidden')) return;
 
@@ -352,8 +285,7 @@ export function initModal() {
     }
   });
 
-  // Handle browser back/forward buttons
-  window.addEventListener('popstate', (e) => {
+  window.addEventListener('popstate', () => {
     const params = new URLSearchParams(window.location.search);
     const wordId = params.get('word');
     if (wordId) {
@@ -363,7 +295,6 @@ export function initModal() {
     }
   });
 
-  // Check URL on load for ?word=X
   const initialParams = new URLSearchParams(window.location.search);
   const initialWordId = initialParams.get('word');
   if (initialWordId && wordMap.has(Number(initialWordId))) {
@@ -371,7 +302,6 @@ export function initModal() {
   }
 }
 
-// Auto-run when loaded as module or script
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initModal);
 } else {

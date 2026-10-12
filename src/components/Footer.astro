@@ -1,27 +1,13 @@
 ---
-import words from '../data/words.json';
-import works from '../data/works.json';
-
-const totalWords = words.length;
-const totalWorks = works.length;
-const totalClips = words.filter(w => w.twitchClipUrl).length;
 ---
 
 <footer class="mt-auto border-t border-border-default bg-surface text-text-muted text-xs font-mono select-none">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-    <div class="flex flex-col gap-1 text-center md:text-left">
-      <div class="flex items-center justify-center md:justify-start gap-2 text-text-bright">
-        <span class="text-accent-amber font-semibold">[ tango.droid.moe ]</span>
-        <span>— Offline Vocabulary & Visual Archive</span>
-      </div>
-      <div class="text-text-dim">
-        <span>ARCHIVE STATE: {totalWords} VOCABULARY ENTRIES ACROSS {totalWorks} VISUAL NOVELS ({totalClips} WITH VIDEO CLIPS)</span>
-      </div>
-    </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+    <span class="text-text-main font-semibold">tango.droid.moe</span>
 
-    <div class="flex items-center gap-4 text-xs">
-      <a href="/works" class="hover:text-text-bright hover:underline">[ Works Index ]</a>
-      <a href="https://github.com/Morgawr/tango.droid.moe" target="_blank" rel="noopener noreferrer" class="hover:text-text-bright hover:underline">[ Source Repo ]</a>
+    <div class="flex items-center gap-4">
+      <a href="/works" class="hover:text-text-bright hover:underline">[ Works ]</a>
+      <a href="https://github.com/Morgawr/tango.droid.moe" target="_blank" rel="noopener noreferrer" class="hover:text-text-bright hover:underline">[ GitHub ]</a>
       <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="hover:text-accent-amber transition-colors">
         [ Top &uarr; ]
       </button>

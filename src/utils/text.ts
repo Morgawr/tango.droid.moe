@@ -13,7 +13,7 @@ export interface WordItem {
   wordRange?: [number, number] | null;
   tag: string;
   workSlug: string;
-  workTitle: string;
+  workTitle?: string;
   hasScreenshot: boolean;
   screenshotUrl?: string | null;
   thumbnailUrl?: string | null;

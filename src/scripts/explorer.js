@@ -104,7 +104,7 @@ export function initExplorer() {
 
     // Update Counter
     if (counterEl) {
-      counterEl.textContent = `SHOWING ${visibleCount} OF ${totalCards} ENTRIES`;
+      counterEl.textContent = `${visibleCount} / ${totalCards}`;
     }
 
     // Toggle Empty State
