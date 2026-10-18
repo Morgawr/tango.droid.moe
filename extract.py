@@ -125,6 +125,7 @@ for row in rows:
     work_meta = known_works.get(tag, {
         "slug": tag,
         "vndbId": None,
+        "backloggdSlug": None,
     })
 
     # Track stats
@@ -133,6 +134,7 @@ for row in rows:
             "tag": tag,
             "slug": work_meta.get("slug", tag),
             "vndbId": work_meta.get("vndbId"),
+            "backloggdSlug": work_meta.get("backloggdSlug"),
             "wordCount": 0,
             "clipCount": 0,
         }

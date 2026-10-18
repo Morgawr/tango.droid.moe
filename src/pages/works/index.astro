@@ -28,6 +28,16 @@ import works from '../../data/works.json';
                 [ VNDB &nearr; ]
               </a>
             )}
+            {entry.backloggdSlug && (
+              <a
+                href={`https://backloggd.com/games/${entry.backloggdSlug}/`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-text-muted hover:text-accent-green-bright hover:underline"
+              >
+                [ Backloggd &nearr; ]
+              </a>
+            )}
           </div>
 
           <div class="flex items-center gap-3 text-text-muted">
