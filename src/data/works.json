@@ -3,8 +3,8 @@
     "tag": "二重影",
     "slug": "v3856",
     "vndbId": "v3856",
-    "wordCount": 35,
-    "clipCount": 1
+    "wordCount": 39,
+    "clipCount": 3
   },
   {
     "tag": "インタールード",
@@ -12,5 +12,12 @@
     "vndbId": "v3195",
     "wordCount": 25,
     "clipCount": 0
+  },
+  {
+    "tag": "ファイナルファンタジー レゾナンス",
+    "slug": "ff-resonance",
+    "vndbId": null,
+    "wordCount": 8,
+    "clipCount": 5
   }
 ]

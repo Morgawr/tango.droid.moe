@@ -1,5 +1,309 @@
 [
   {
+    "id": 95,
+    "kind": "vocab",
+    "createdAt": 1792303731900,
+    "dateFormatted": "2026-10-18",
+    "term": "男衆",
+    "reading": "おとこしゅう",
+    "pitchAccent": null,
+    "frequencyRank": 39557,
+    "definitionText": "① men\n② manservant\n③ male attendants to an actor",
+    "definitions": [
+      "① men",
+      "② manservant",
+      "③ male attendants to an actor"
+    ],
+    "sentence": "何人もの男衆が集まり、新しい鳥居を建てる場所Aを検討しあっている最中らしい。",
+    "wordRange": [
+      4,
+      6
+    ],
+    "tag": "二重影",
+    "workSlug": "v3856",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/95.webp",
+    "thumbnailUrl": "/media/95_thumb.webp",
+    "twitchClipUrl": "https://www.twitch.tv/morgstream/clip/GleamingBigCourgettePeoplesChamp-336jayEE0CS_awaN"
+  },
+  {
+    "id": 94,
+    "kind": "vocab",
+    "createdAt": 1792302186901,
+    "dateFormatted": "2026-10-18",
+    "term": "微風",
+    "reading": "そよかぜ",
+    "pitchAccent": null,
+    "frequencyRank": 38192,
+    "definitionText": "gentle breeze; soft wind; breath of air; zephyr",
+    "definitions": [
+      "gentle breeze; soft wind; breath of air; zephyr"
+    ],
+    "sentence": "夕暮れに吹く生温いような微風が双厳の頬を撫でた。",
+    "wordRange": [
+      12,
+      14
+    ],
+    "tag": "二重影",
+    "workSlug": "v3856",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/94.webp",
+    "thumbnailUrl": "/media/94_thumb.webp",
+    "twitchClipUrl": "https://www.twitch.tv/morgstream/clip/PlausibleFuriousWoodpeckerOMGScoots-25oeMqj8LcPWCmfG"
+  },
+  {
+    "id": 93,
+    "kind": "vocab",
+    "createdAt": 1792167515880,
+    "dateFormatted": "2026-10-16",
+    "term": "根城",
+    "reading": "ねじろ",
+    "pitchAccent": null,
+    "frequencyRank": 19423,
+    "definitionText": "① stronghold; citadel\n② base (of operations); headquarters",
+    "definitions": [
+      "① stronghold; citadel",
+      "② base (of operations); headquarters"
+    ],
+    "sentence": "まだ根城と確定したわけではありません。",
+    "wordRange": [
+      2,
+      4
+    ],
+    "tag": "ファイナルファンタジー レゾナンス",
+    "workSlug": "ff-resonance",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/93.webp",
+    "thumbnailUrl": "/media/93_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 92,
+    "kind": "vocab",
+    "createdAt": 1792080180515,
+    "dateFormatted": "2026-10-15",
+    "term": "こじ開ける",
+    "reading": "こじあける",
+    "pitchAccent": null,
+    "frequencyRank": 9204,
+    "definitionText": "to wrench open; to break open; to pry open; to prise open; to force open",
+    "definitions": [
+      "to wrench open; to break open; to pry open; to prise open; to force open"
+    ],
+    "sentence": "ラスウェル レインがこじ開けようとしてレーゲンさんに怒られたこともあったな。",
+    "wordRange": [
+      10,
+      16
+    ],
+    "tag": "ファイナルファンタジー レゾナンス",
+    "workSlug": "ff-resonance",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/92.webp",
+    "thumbnailUrl": "/media/92_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 91,
+    "kind": "vocab",
+    "createdAt": 1792072061041,
+    "dateFormatted": "2026-10-15",
+    "term": "火遁",
+    "reading": "かとん",
+    "pitchAccent": null,
+    "frequencyRank": 85103,
+    "definitionText": "(ninja art of) escaping using fire or smoke",
+    "definitions": [
+      "(ninja art of) escaping using fire or smoke"
+    ],
+    "sentence": "火遁の巻物・壱",
+    "wordRange": [
+      0,
+      2
+    ],
+    "tag": "ファイナルファンタジー レゾナンス",
+    "workSlug": "ff-resonance",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/91.webp",
+    "thumbnailUrl": "/media/91_thumb.webp",
+    "twitchClipUrl": "https://www.twitch.tv/morgstream/clip/IcyFurtiveTriangleMikeHogu-_MGgAFh62wh77lqe"
+  },
+  {
+    "id": 90,
+    "kind": "vocab",
+    "createdAt": 1792071697232,
+    "dateFormatted": "2026-10-15",
+    "term": "支給品",
+    "reading": "しきゅうひん",
+    "pitchAccent": null,
+    "frequencyRank": 50789,
+    "definitionText": "supplies; provisions; article supplied",
+    "definitions": [
+      "supplies; provisions; article supplied"
+    ],
+    "sentence": "支給品だけでは足りないようでしたら、こちらにご用意ございます。",
+    "wordRange": [
+      0,
+      3
+    ],
+    "tag": "ファイナルファンタジー レゾナンス",
+    "workSlug": "ff-resonance",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/90.webp",
+    "thumbnailUrl": "/media/90_thumb.webp",
+    "twitchClipUrl": "https://www.twitch.tv/morgstream/clip/SoftSquareOilRlyTho-oY6wOFlq6SshQFbw"
+  },
+  {
+    "id": 89,
+    "kind": "vocab",
+    "createdAt": 1792071404533,
+    "dateFormatted": "2026-10-15",
+    "term": "全速前進",
+    "reading": "ぜんそくぜんしん",
+    "pitchAccent": null,
+    "frequencyRank": 49626,
+    "definitionText": "Full speed ahead!; Full steam ahead!",
+    "definitions": [
+      "Full speed ahead!; Full steam ahead!"
+    ],
+    "sentence": "ラスウェル、全速前進だ!",
+    "wordRange": [
+      6,
+      10
+    ],
+    "tag": "ファイナルファンタジー レゾナンス",
+    "workSlug": "ff-resonance",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/89.webp",
+    "thumbnailUrl": "/media/89_thumb.webp",
+    "twitchClipUrl": "https://www.twitch.tv/morgstream/clip/RenownedLightKathyFloof-GtLFGOxePTI_JVZN"
+  },
+  {
+    "id": 88,
+    "kind": "vocab",
+    "createdAt": 1792071219834,
+    "dateFormatted": "2026-10-15",
+    "term": "流星雨",
+    "reading": "りゅうせいう",
+    "pitchAccent": null,
+    "frequencyRank": 67689,
+    "definitionText": "meteor shower",
+    "definitions": [
+      "meteor shower"
+    ],
+    "sentence": "にしても･･････すごい流星雨だな。",
+    "wordRange": [
+      13,
+      16
+    ],
+    "tag": "ファイナルファンタジー レゾナンス",
+    "workSlug": "ff-resonance",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/88.webp",
+    "thumbnailUrl": "/media/88_thumb.webp",
+    "twitchClipUrl": "https://www.twitch.tv/morgstream/clip/BusyTallToothWTRuck-KiTciP-SDpgA_CAt"
+  },
+  {
+    "id": 87,
+    "kind": "vocab",
+    "createdAt": 1792070998281,
+    "dateFormatted": "2026-10-15",
+    "term": "配備",
+    "reading": "はいび",
+    "pitchAccent": null,
+    "frequencyRank": 17917,
+    "definitionText": "deployment; disposition; posting; stationing",
+    "definitions": [
+      "deployment; disposition; posting; stationing"
+    ],
+    "sentence": "グランシェルト兵いつかレイン隊長の飛空艇部隊に配備されたいものです。",
+    "wordRange": [
+      23,
+      25
+    ],
+    "tag": "ファイナルファンタジー レゾナンス",
+    "workSlug": "ff-resonance",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/87.webp",
+    "thumbnailUrl": "/media/87_thumb.webp",
+    "twitchClipUrl": "https://www.twitch.tv/morgstream/clip/TastyRelentlessNikudonVoteYea-uN11J4KqHi25bQNy"
+  },
+  {
+    "id": 86,
+    "kind": "vocab",
+    "createdAt": 1792059754366,
+    "dateFormatted": "2026-10-15",
+    "term": "一定",
+    "reading": "いってい",
+    "pitchAccent": null,
+    "frequencyRank": 4172,
+    "definitionText": "① to fix; to settle; to standardize; to regularize\n② constant; definite; uniform; defined; certain; prescribed",
+    "definitions": [
+      "① to fix; to settle; to standardize; to regularize",
+      "② constant; definite; uniform; defined; certain; prescribed"
+    ],
+    "sentence": "幻獣を召喚することで、一定ターン戦闘を共にしてくれます。",
+    "wordRange": [
+      11,
+      13
+    ],
+    "tag": "ファイナルファンタジー レゾナンス",
+    "workSlug": "ff-resonance",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/86.webp",
+    "thumbnailUrl": "/media/86_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 85,
+    "kind": "vocab",
+    "createdAt": 1792046121777,
+    "dateFormatted": "2026-10-15",
+    "term": "宴会",
+    "reading": "えんかい",
+    "pitchAccent": null,
+    "frequencyRank": 11673,
+    "definitionText": "party; banquet; reception; feast; dinner",
+    "definitions": [
+      "party; banquet; reception; feast; dinner"
+    ],
+    "sentence": "どうやら、今日きた連中は宴会を開いているようだ。",
+    "wordRange": [
+      12,
+      14
+    ],
+    "tag": "二重影",
+    "workSlug": "v3856",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/85.webp",
+    "thumbnailUrl": "/media/85_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
+    "id": 83,
+    "kind": "vocab",
+    "createdAt": 1791887846174,
+    "dateFormatted": "2026-10-13",
+    "term": "不世出",
+    "reading": "ふせいしゅつ",
+    "pitchAccent": null,
+    "frequencyRank": 64967,
+    "definitionText": "rare; extraordinary; unparalleled; unparallelled",
+    "definitions": [
+      "rare; extraordinary; unparalleled; unparallelled"
+    ],
+    "sentence": "否、それどころか、双厳が二重影の呪いを受けても取り込まれないで、ここまで人間として生きてこれたのも、すべては双厳そのものが桁違いの不世出の剣の天才あり、",
+    "wordRange": [
+      65,
+      68
+    ],
+    "tag": "二重影",
+    "workSlug": "v3856",
+    "hasScreenshot": true,
+    "screenshotUrl": "/media/83.webp",
+    "thumbnailUrl": "/media/83_thumb.webp",
+    "twitchClipUrl": null
+  },
+  {
     "id": 80,
     "kind": "vocab",
     "createdAt": 1791821141619,
